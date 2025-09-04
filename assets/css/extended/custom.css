@@ -1,0 +1,313 @@
+/* 
+ * 精细化头部视觉优化样式
+ * 与 /coupons/ 页面风格完全统一
+ * 完全匹配"每日优惠精选"的设计风格
+ */
+
+/* ===== 头部整体风格 ===== */
+.header {
+    background: linear-gradient(135deg, #FF8C00, #FFA500) !important;
+    border-radius: 15px 15px 15px 15px !important;
+    box-shadow: 0 4px 20px rgba(255, 140, 0, 0.25);
+    border: none !important;
+    padding: 15px 0 20px 0 !important;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+/* 确保在所有主题模式下都生效 */
+[data-theme="light"] .header,
+[data-theme="dark"] .header,
+body .header {
+    background: linear-gradient(135deg, #FF8C00, #FFA500) !important;
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+/* ===== 头部容器布局 ===== */
+.header nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== 主标题样式（模仿"每日优惠精选"） ===== */
+.header .logo,
+.header .logo a {
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    text-decoration: none !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0px !important;
+    margin-top: 8px !important;
+    display: block;
+    text-align: center;
+    transition: transform 0.3s ease;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.header .logo:hover,
+.header .logo a:hover {
+    transform: translateY(-1px);
+    color: white !important;
+}
+
+/* ===== 添加副标题样式（模仿"为您聚合全网热门优惠券"） ===== */
+.header .logo::after {
+    content: "（为您提供最新、最全的优惠信息）";
+    display: block;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: white !important;
+    margin-top: -2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    opacity: 0.95;
+}
+
+/* ===== 导航菜单居中布局 ===== */
+.header #menu {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 35px;
+    margin: 15px 0 0 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+/* ===== 导航链接精美样式 ===== */
+.header ul#menu li a {
+    color: white !important;
+    font-weight: 500 !important;
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    padding: 4px 6px 4px 6px !important;
+    position: relative !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 12px !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    display: inline-block !important;
+    min-width: auto !important;
+    width: auto !important;
+    line-height: 1 !important;
+}
+
+/* 优惠头条按钮样式（无箭头） */
+.header ul#menu li a[href^="http://localhost:"][href$="/"],
+.header ul#menu li a[href="/"] {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 优惠券大全按钮样式（带右箭头） */
+.header ul#menu li a[href$="/coupons/"]::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 4px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 3px solid white !important;
+    border-top: 2.5px solid transparent !important;
+    border-bottom: 2.5px solid transparent !important;
+}
+
+/* 移动端箭头调整 */
+@media (max-width: 768px) {
+    .header ul#menu li a[href$="/coupons/"]::before {
+        left: 6px !important;
+        border-left: 4px solid white !important;
+        border-top: 3px solid transparent !important;
+        border-bottom: 3px solid transparent !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header ul#menu li a[href$="/coupons/"]::before {
+        left: 5px !important;
+        border-left: 3.5px solid white !important;
+        border-top: 2.5px solid transparent !important;
+        border-bottom: 2.5px solid transparent !important;
+    }
+}
+
+.header ul#menu li a[href$="/coupons/"] {
+    padding: 4px 6px 4px 10px !important;
+}
+
+/* 移除下划线动画，因为现在使用按钮样式 */
+.header ul#menu li a::after {
+    display: none !important;
+}
+
+/* 悬停时整体效果 */
+.header ul#menu li a:hover {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ===== 当前页面导航高亮 ===== */
+.header ul#menu li a.active,
+.header ul#menu li a[aria-current="page"],
+.header ul#menu li .active {
+    background: rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ===== 隐藏主题切换和搜索按钮 ===== */
+.header .theme-toggle,
+.header .search-button,
+#theme-toggle,
+#searchbox {
+    display: none !important;
+}
+
+/* ===== 移动端响应式设计 ===== */
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 0 16px 0 !important;
+        margin: 5px;
+    }
+    
+    .header nav {
+        padding: 0 15px;
+    }
+    
+    .header .logo,
+    .header .logo a {
+        font-size: 1.3rem !important;
+        margin-bottom: 0px !important;
+        margin-top: 6px !important;
+        letter-spacing: 1px;
+    }
+    
+    .header .logo::after {
+        font-size: 0.7rem !important;
+        margin-top: -1px;
+    }
+    
+    /* 文章标题字体调整 */
+    .post-title {
+        font-size: 1.4rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    /* 文章内容字体调整 */
+    .post-content {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* 文章内容标题调整 */
+    .post-content h1 {
+        font-size: 1.2rem !important;
+    }
+    
+    .post-content h2 {
+        font-size: 1.1rem !important;
+    }
+    
+    .post-content h3 {
+        font-size: 1rem !important;
+    }
+    
+    .header #menu {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px !important;
+    }
+    
+    .header ul#menu li a {
+        font-size: 1.2rem !important;
+        padding: 6px 10px 6px 10px !important;
+        line-height: 1 !important;
+    }
+    
+    .header ul#menu li a[href$="/coupons/"] {
+        padding: 6px 10px 6px 16px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin: 3px;
+        padding: 10px 0 14px 0 !important;
+    }
+    
+    .header #menu {
+        gap: 20px;
+        margin-top: 8px !important;
+    }
+    
+    .header ul#menu li a {
+        padding: 5px 8px 5px 8px !important;
+        font-size: 1rem !important;
+        line-height: 1 !important;
+    }
+    
+    .header ul#menu li a[href$="/coupons/"] {
+        padding: 5px 8px 5px 13px !important;
+    }
+    
+    .header .logo,
+    .header .logo a {
+        font-size: 1.4rem !important;
+        margin-top: 4px !important;
+        margin-bottom: 0px !important;
+    }
+    
+    .header .logo::after {
+        font-size: 0.75rem !important;
+        margin-top: -2px;
+    }
+}
+
+/* ===== 确保所有链接保持白色 ===== */
+.header a,
+.header a:hover,
+.header a:focus,
+.header a:active,
+.header a:visited {
+    color: white !important;
+}
+
+/* ===== 移除默认样式冲突 ===== */
+.header * {
+    border: none !important;
+}
+
+.header .nav {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* ===== 确保头部在页面顶部正确显示 ===== */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.main {
+    padding-top: 0 !important;
+}
+
+/* 隐藏面包屑导航 */
+.breadcrumbs,
+.post-breadcrumb {
+    display: none !important;
+}

@@ -1,0 +1,401 @@
+/* 基本重置和全局样式 */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    margin: 0;
+    background-color: #f4f5f7;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+header {
+    background: #ff7300; /* 降级方案 */
+    background: -webkit-linear-gradient(left, #ff7300 0%, #ffb347 100%);
+    background: -moz-linear-gradient(left, #ff7300 0%, #ffb347 100%);
+    background: linear-gradient(90deg, #ff7300 0%, #ffb347 100%);
+    padding: 8px 0 18px 0;
+    text-align: center;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+/* 头部导航样式 */
+.header-nav {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    z-index: 10;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-link:hover,
+.back-link:active {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.back-link::before {
+    content: '←';
+    margin-right: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+main {
+    padding: 2px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 卡片样式 */
+.card {
+    background-color: white;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    -moz-transition: -moz-transform 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.card:active {
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98);
+}
+
+.card-icon {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #fff;
+    max-width: 100%;
+}
+
+.card-content {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.card-content h2 {
+    font-size: 13px;
+    margin: 0 0 5px;
+}
+
+.card-content p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+}
+
+/* 按钮样式 */
+.button {
+    flex-shrink: 0;
+    background-color: #f53d3d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button.button:active {
+    background-color: #d93030;
+}
+
+/* 错误处理样式 */
+.error-message {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: 15px;
+    margin: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 12px;
+}
+/* ================= */
+/* 新增加的样式代码   */
+/* ================= */
+
+/* 标签页导航栏样式 */
+.tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    gap: 36px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    overflow-x: visible;
+    padding: 0;
+}
+
+.tab-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  min-width: 60px;
+  padding: 10px 12px 0 12px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.tab-link .tab-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    object-fit: cover;
+    background: #f8f8f8;
+    border: 1px solid #f0f0f0;
+}
+
+.tab-link span {
+    font-size: 14px;
+    color: #333;
+    margin-top: 2px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.tab-link.active span {
+    color: #e93b3d;
+    border-bottom: 3px solid #e93b3d;
+    padding-bottom: 2px;
+}
+
+/* 标签内容区默认隐藏 */
+.tab-content {
+    display: none;
+}
+
+/* 今日主推和常规优惠区域的标题 */
+.highlight-section h2, .regular-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 今日主推的内容列表 */
+.deals-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.deals-list li {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 分隔两个区域的间距 */
+.regular-section {
+    margin-top: 15px;
+}
+
+.section-tip {
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+.hint {
+  color: #999;
+  font-size: 12px;
+  margin-left: 6px;
+  font-weight: normal;
+}
+
+.platform-block > *:first-child {
+  margin-top: 3px !important;
+}
+
+.regular-section,
+.highlight-section {
+  padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .tabs {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-around;
+        -moz-box-pack: justify;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        overflow-x: visible;
+        -webkit-overflow-scrolling: touch;
+        gap: 0;
+        padding: 0 10px;
+    }
+    .tab-link {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        min-width: 50px;
+    }
+    .tab-link .tab-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .tab-link span {
+        font-size: 12px;
+    }
+    .card-content h2 {
+        font-size: 14px;
+    }
+    .card-content p {
+        font-size: 11px;
+    }
+    .section-tip {
+      font-size: 11px;
+    }
+    .regular-section {
+      margin-top: 3px !important;
+    }
+    
+    /* 移动端导航样式 */
+    .header-nav {
+        top: 8px;
+        left: 12px;
+    }
+    
+    .back-link {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+    
+    .back-link::before {
+        margin-right: 4px;
+    }
+}

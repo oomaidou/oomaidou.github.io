@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-page-mode" content="app">
+    <meta name="browsermode" content="application">
+    
+    <!-- 基础SEO -->
+    <title>每日优惠券合集 - 美团、饿了么、京东等平台优惠券一站领取</title>
+    <meta name="description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。最新优惠券、红包、满减券实时更新。">
+    <meta name="keywords" content="优惠券,美团优惠券,饿了么优惠券,京东优惠券,外卖红包,生活服务优惠券,省钱,每日更新,免费优惠券,红包领取">
+    <meta name="author" content="优惠券合集">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oomaidou.github.io/coupons-all/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="每日优惠券合集 - 美团、饿了么、京东等平台优惠券一站领取">
+    <meta property="og:description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oomaidou.github.io/coupons-all/">
+    <meta property="og:image" content="https://oomaidou.github.io/coupons-all/meituan/meituan.png">
+    <meta property="og:site_name" content="优惠券合集">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="每日优惠券合集 - 美团、饿了么、京东等平台优惠券一站领取">
+    <meta name="twitter:description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。">
+    <meta name="twitter:image" content="https://oomaidou.github.io/coupons-all/meituan/meituan.png">
+    
+    <!-- 移动端优化 -->
+    <meta name="theme-color" content="#ff6b35">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="优惠券合集">
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="coupon-renderer.js" as="script">
+    <link rel="preload" href="style.css" as="style">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "每日优惠券合集",
+      "description": "每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。",
+      "url": "https://oomaidou.github.io/coupons-all/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://oomaidou.github.io/coupons-all/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "优惠券合集"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 搜索引擎验证代码 -->
+    <!-- 百度站长工具验证代码 - 请替换为您的实际验证代码 -->
+    <!-- <meta name="baidu-site-verification" content="您的验证代码" /> -->
+    
+    <!-- Google Search Console验证代码 - 请替换为您的实际验证代码 -->
+    <!-- <meta name="google-site-verification" content="您的验证代码" /> -->
+</head>
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <a href="../" class="back-link">优惠头条</a>
+        </nav>
+        <h1>每日优惠精选</h1>
+        <p>为您聚合全网热门优惠券</p>
+    </header>
+    
+
+
+    <div class="tabs">
+        <div class="tab-link active" onclick="openPlatform(event, 'meituan')">
+            <img src="meituan/meituan.png" alt="美团平台Logo" class="tab-icon">
+            <span>美团</span>
+        </div>
+        <div class="tab-link" onclick="openPlatform(event, 'eleme')">
+            <img src="eleme/eleme.png" alt="饿了么平台Logo" class="tab-icon">
+            <span>饿了么</span>
+        </div>
+        <div class="tab-link" onclick="openPlatform(event, 'jingdong')">
+            <img src="jingdong/jd.png" alt="京东平台Logo" class="tab-icon">
+            <span>京东</span>
+        </div>
+        <div class="tab-link" onclick="openPlatform(event, 'shenghuo')">
+            <img src="shenghuo/shenghuo.png" alt="生活服务平台Logo" class="tab-icon">
+            <span>生活服务</span>
+        </div>
+    </div>
+
+    <main>
+        <div id="meituan" class="tab-content" style="display: block;"></div>
+        <div id="eleme" class="tab-content"></div>
+        <div id="jingdong" class="tab-content"></div>
+        <div id="shenghuo" class="tab-content"></div>
+    </main>
+
+    <footer>
+        <p>优惠信息每日更新</p>
+    </footer>
+    
+    <!-- SEO内容区域 - 对用户隐藏但对搜索引擎可见 -->
+    <div class="seo-content" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; padding: 1rem; background: #f9f9f9; margin: 1rem 0; border-radius: 8px; font-size: 0.9rem; color: #666;">
+        <h2 style="color: #333; margin-bottom: 1rem; font-size: 1.2rem;">优惠券合集 - 美团、饿了么、京东等平台优惠券免费领取</h2>
+        <p style="line-height: 1.6; color: #666; margin-bottom: 1rem;">
+            我们为您精选美团、饿了么、京东等主流平台的最新优惠券，包括外卖红包、满减券、新人专享券等。每日更新，确保优惠信息的时效性，让您享受更多优惠。
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 1rem;">
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #ff6b35;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #ff6b35; font-size: 1rem;">美团优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">外卖红包、满减券、新人专享券</p>
+                <a href="meituan/" style="color: #ff6b35; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #2395ff;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #2395ff; font-size: 1rem;">饿了么优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">外卖红包、满减券、新人专享券</p>
+                <a href="eleme/" style="color: #2395ff; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #e1251b;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #e1251b; font-size: 1rem;">京东优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">购物券、满减券、新人专享券</p>
+                <a href="jingdong/" style="color: #e1251b; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #4caf50;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #4caf50; font-size: 1rem;">生活服务优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">滴滴、电影票、酒店等优惠券</p>
+                <a href="shenghuo/" style="color: #4caf50; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 错误处理和兼容性检测 -->
+    <script>
+    // 全局错误处理
+    window.onerror = function(msg, url, lineNo, columnNo, error) {
+        console.error('页面错误:', {msg, url, lineNo, columnNo, error});
+        return false;
+    };
+
+    // Promise错误处理
+    window.addEventListener('unhandledrejection', function(event) {
+        console.error('Promise错误:', event.reason);
+    });
+
+    // 检测微信浏览器
+    function isWechatBrowser() {
+        return /micromessenger/i.test(navigator.userAgent);
+    }
+
+    // 检测是否支持fetch
+    if (!window.fetch) {
+        // Fetch polyfill for older browsers
+        window.fetch = function(url) {
+            return new Promise(function(resolve, reject) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url);
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        resolve({
+                            json: function() {
+                                return Promise.resolve(JSON.parse(xhr.responseText));
+                            }
+                        });
+                    } else {
+                        reject(new Error('HTTP ' + xhr.status));
+                    }
+                };
+                xhr.onerror = function() {
+                    reject(new Error('Network Error'));
+                };
+                xhr.send();
+            });
+        };
+    }
+
+    // 检测是否支持Promise
+    if (!window.Promise) {
+        // 简单的Promise polyfill
+        window.Promise = function(executor) {
+            var self = this;
+            self.state = 'pending';
+            self.value = undefined;
+            self.handlers = [];
+
+            function resolve(result) {
+                if (self.state === 'pending') {
+                    self.state = 'resolved';
+                    self.value = result;
+                    self.handlers.forEach(handle);
+                }
+            }
+
+            function reject(error) {
+                if (self.state === 'pending') {
+                    self.state = 'rejected';
+                    self.value = error;
+                    self.handlers.forEach(handle);
+                }
+            }
+
+            function handle(handler) {
+                if (self.state === 'pending') {
+                    self.handlers.push(handler);
+                } else {
+                    if (self.state === 'resolved' && handler.onResolve) {
+                        handler.onResolve(self.value);
+                    }
+                    if (self.state === 'rejected' && handler.onReject) {
+                        handler.onReject(self.value);
+                    }
+                }
+            }
+
+            self.then = function(onResolve, onReject) {
+                return new Promise(function(resolve, reject) {
+                    handle({
+                        onResolve: function(result) {
+                            try {
+                                resolve(onResolve ? onResolve(result) : result);
+                            } catch (ex) {
+                                reject(ex);
+                            }
+                        },
+                        onReject: function(error) {
+                            try {
+                                resolve(onReject ? onReject(error) : error);
+                            } catch (ex) {
+                                reject(ex);
+                            }
+                        }
+                    });
+                });
+            };
+
+            executor(resolve, reject);
+        };
+
+        Promise.resolve = function(value) {
+            return new Promise(function(resolve) {
+                resolve(value);
+            });
+        };
+    }
+    </script>
+
+    <script src="script.js"></script>
+    <script src="coupon-renderer.js"></script>
+    
+    <!-- 百度统计代码开始 -->
+    <script>
+    try {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?3590186a50e36acca5884200131b6f07";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    } catch(e) {
+        console.log('统计代码加载失败:', e);
+    }
+    </script>
+    <!-- 百度统计代码结束 -->
+</body>
+</html>

@@ -1,0 +1,20 @@
+{{- if not .Date.IsZero -}}
+{{- $year := .Date.Format "2006" -}}
+{{- $month := .Date.Format "1" -}}
+{{- $day := .Date.Format "2" -}}
+{{- $monthName := "" -}}
+{{- if eq $month "1" }}{{ $monthName = "1月" }}{{ end -}}
+{{- if eq $month "2" }}{{ $monthName = "2月" }}{{ end -}}
+{{- if eq $month "3" }}{{ $monthName = "3月" }}{{ end -}}
+{{- if eq $month "4" }}{{ $monthName = "4月" }}{{ end -}}
+{{- if eq $month "5" }}{{ $monthName = "5月" }}{{ end -}}
+{{- if eq $month "6" }}{{ $monthName = "6月" }}{{ end -}}
+{{- if eq $month "7" }}{{ $monthName = "7月" }}{{ end -}}
+{{- if eq $month "8" }}{{ $monthName = "8月" }}{{ end -}}
+{{- if eq $month "9" }}{{ $monthName = "9月" }}{{ end -}}
+{{- if eq $month "10" }}{{ $monthName = "10月" }}{{ end -}}
+{{- if eq $month "11" }}{{ $monthName = "11月" }}{{ end -}}
+{{- if eq $month "12" }}{{ $monthName = "12月" }}{{ end -}}
+{{- $dateStr := printf "%s年%s%s日" $year $monthName $day -}}
+{{- printf "<span title='%s'>%s</span>" .Date $dateStr | safeHTML -}}
+{{- end -}}

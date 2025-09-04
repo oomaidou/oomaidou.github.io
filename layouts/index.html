@@ -1,0 +1,154 @@
+{{- define "main" }}
+
+{{- /* 获取最新的一篇文章 */ -}}
+{{- $posts := where .Site.RegularPages "Section" "posts" -}}
+{{- $posts = where $posts ".Draft" false -}}
+{{- $latestPost := index $posts 0 -}}
+
+<div class="main">
+    {{- if $latestPost }}
+    <article class="post-single">
+        <header class="post-header">
+            <h1 class="post-title">
+                {{ $latestPost.Title }}
+            </h1>
+            {{- if (ne ($latestPost.Param "hideMeta") true) }}
+            <div class="post-meta">
+                {{- if not $latestPost.Date.IsZero -}}
+                {{- $year := $latestPost.Date.Format "2006" -}}
+                {{- $month := $latestPost.Date.Format "1" -}}
+                {{- $day := $latestPost.Date.Format "2" -}}
+                {{- $monthName := "" -}}
+                {{- if eq $month "1" }}{{ $monthName = "1月" }}{{ end -}}
+                {{- if eq $month "2" }}{{ $monthName = "2月" }}{{ end -}}
+                {{- if eq $month "3" }}{{ $monthName = "3月" }}{{ end -}}
+                {{- if eq $month "4" }}{{ $monthName = "4月" }}{{ end -}}
+                {{- if eq $month "5" }}{{ $monthName = "5月" }}{{ end -}}
+                {{- if eq $month "6" }}{{ $monthName = "6月" }}{{ end -}}
+                {{- if eq $month "7" }}{{ $monthName = "7月" }}{{ end -}}
+                {{- if eq $month "8" }}{{ $monthName = "8月" }}{{ end -}}
+                {{- if eq $month "9" }}{{ $monthName = "9月" }}{{ end -}}
+                {{- if eq $month "10" }}{{ $monthName = "10月" }}{{ end -}}
+                {{- if eq $month "11" }}{{ $monthName = "11月" }}{{ end -}}
+                {{- if eq $month "12" }}{{ $monthName = "12月" }}{{ end -}}
+                {{- $dateStr := printf "%s年%s%s日" $year $monthName $day -}}
+                <span title='{{ $latestPost.Date }}'>{{ $dateStr }}</span>
+                {{- end -}}
+            </div>
+            {{- end }}
+        </header>
+        
+        {{- if ($latestPost.Param "ShowToc") }}
+        {{- partial "toc.html" $latestPost }}
+        {{- end }}
+
+        <div class="post-content">
+            {{- if not ($latestPost.Param "disableAnchoredHeadings") }}
+            {{- partial "anchored_headings.html" $latestPost.Content }}
+            {{- else }}
+            {{ $latestPost.Content }}
+            {{- end }}
+        </div>
+
+        {{- /* 添加查看往期优惠链接 */ -}}
+        <div class="post-footer-nav">
+            <div class="archive-link">
+                <a href="{{ "posts" | relURL }}" class="archive-btn">
+                    <svg class="archive-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    查看往期优惠
+                </a>
+            </div>
+        </div>
+
+        <footer class="post-footer">
+            {{- if $latestPost.Params.tags }}
+            <ul class="post-tags">
+                {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+                {{- range ($latestPost.GetTerms $tags) }}
+                <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+                {{- end }}
+            </ul>
+            {{- end }}
+        </footer>
+    </article>
+    {{- else }}
+    {{- /* 如果没有文章，显示默认内容 */ -}}
+    <div class="no-posts">
+        <h1>欢迎来到优惠信息头条</h1>
+        <p>暂无优惠信息，请稍后再来查看。</p>
+        <div class="archive-link">
+            <a href="{{ "coupons" | relURL }}" class="archive-btn">
+                查看优惠券大全
+            </a>
+        </div>
+    </div>
+    {{- end }}
+</div>
+
+{{- /* 自定义样式 */ -}}
+<style>
+.post-footer-nav {
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.archive-link .archive-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #FF8C00, #FFA500);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+}
+
+.archive-link .archive-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4);
+    color: white;
+}
+
+.archive-icon {
+    stroke: currentColor;
+}
+
+.no-posts {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.no-posts h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.no-posts p {
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* 确保在暗色主题下也能正常显示 */
+[data-theme="dark"] .archive-link .archive-btn,
+.dark .archive-link .archive-btn {
+    color: white;
+}
+
+[data-theme="dark"] .archive-link .archive-btn:hover,
+.dark .archive-link .archive-btn:hover {
+    color: white;
+}
+</style>
+
+{{- end }}

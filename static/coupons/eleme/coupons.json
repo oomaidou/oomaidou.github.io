@@ -1,0 +1,147 @@
+{
+  "platform": "eleme",
+  "platformName": "饿了么",
+  "icon": "eleme/eleme.png",
+  "sections": [
+    {
+      "title": "红包专区",
+      "coupons": [
+        {
+          "id": "eleme-1",
+          "title": "淘宝闪购红包",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥sjAQ4PKw8RV￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-2",
+          "title": "淘宝闪购-叠红包",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥ggV64PKBcAw￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-3",
+          "title": "淘宝闪购-新客福利",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥LIcl4PqZf73￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-4",
+          "title": "淘宝闪购-爆品好价",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥AkWL4Pq2ZaY￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },       
+        {
+          "id": "eleme-5",
+          "title": "淘宝闪购-爆品团",
+          "description": "免凑单 免配送。复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "38￥ HU287 nugz46rgAe1￥",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-6",
+          "title": "饿了么外卖红包",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥7F9E4PqeTTs￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-7",
+          "title": "红包天天领会场",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥QuD64PqfDZU￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-8",
+          "title": "饿了么爆款单品",
+          "description": "复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "爆款单品好价:mp://co34okIKsqTs2Dj",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "eleme-9",
+          "title": "天天膨胀18.8元",
+          "description": "复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "18.8极限爆涨:mp://Kf07GtehcmfDjcm",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "eleme-10",
+          "title": "囤券券真省钱",
+          "description": "餐饮券可囤可配送，过期自动退",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "囤券券真省钱，过期自动退:mp://X0NU3YvLCfqHDnJ",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "eleme-11",
+          "title": "饿了么地铁商圈红包",
+          "description": "地铁附近商圈、红包领不停",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "饿了么地铁商圈红包:mp://Nt8NlVcfyeZYl1B",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "eleme-12",
+          "title": "淘宝闪购-天天红包",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥6q2o4PqlmTi￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },        
+        {
+          "id": "eleme-13",
+          "title": "社群限量福利",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥Empw4PqO3rg￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-14",
+          "title": "全国超市便利活动",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥mWGa4Pqq3WO￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-15",
+          "title": "医药全国门店活动",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥vfbD4PqrCqQ￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        }
+      ]
+    }
+  ]
+} 

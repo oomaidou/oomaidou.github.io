@@ -1,0 +1,66 @@
+baseURL = "https://oomaidou.github.io/"
+languageCode = "zh-cn"
+title = "优惠信息头条"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# PaperMod 主题配置
+[params]
+  env = "production"
+  title = "优惠信息头条"
+  description = "最新优惠信息，省钱必备"
+  keywords = ["优惠券", "折扣", "省钱", "购物"]
+  author = "优惠信息头条"
+  
+  # 显示相关配置
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+  
+  # 禁用主题切换和搜索按钮
+  disableThemeToggle = true
+  disableSearchToggle = true
+
+  # 使用自定义首页模板显示最新文章
+  
+  # 自定义副标题
+  subtitle = "为您提供最新、最全的优惠信息"
+
+  # 社交链接
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/oomaidou"
+
+# 主导航菜单配置
+[[menu.main]]
+  identifier = "home"
+  name = "优惠头条"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "coupons"
+  name = "优惠券大全"
+  url = "/coupons/"
+  weight = 20
+
+# 多语言支持
+[languages.zh-cn]
+  languageName = "简体中文"
+  weight = 1

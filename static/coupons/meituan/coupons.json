@@ -1,0 +1,202 @@
+{
+  "platform": "meituan",
+  "platformName": "美团",
+  "icon": "meituan/meituan.png",
+  "sections": [
+    {
+      "title": "红包专区",
+      "coupons": [
+        {
+          "id": "meituan-1",
+          "title": "美团外卖红包1",
+          "description": "天天更新，最高可领56元！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/t0f689Dz",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-2",
+          "title": "红包天天领会场",
+          "description": "天天可领，可叠加使用！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/6Lx24cgz",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-22",
+          "title": "美团外卖红包3",
+          "description": "天天可领，可叠加使用！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/i3nNWMUz",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-3",
+          "title": "美团周三外卖节",
+          "description": "每周三领-13元大红包",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/6Lx24cgz",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-4",
+          "title": "18日神券节",
+          "description": "每月18日，领18元红包！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/rQYIJBvz",
+          "icon": "meituan/shenquan.png"
+        },
+        {
+          "id": "meituan-6",
+          "title": "冰品节天天送免单",
+          "description": "随机抽取35-35免单券！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/IfIbgS8z",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-7",
+          "title": "大牌饮品商品券",
+          "description": "4.9元喝奶茶，福利超多",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/DNeWHozz",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-8",
+          "title": "美团新人专享活动",
+          "description": "领新人百元福利",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/WLJxasvz",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-9",
+          "title": "15.9抢600元年卡",
+          "description": "复制后，打开美团App领",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "1 %复制信息#% 打开团App http:/¥4eODFlMWUzYjA¥ 领",
+          "icon": "meituan/shenquan.png"
+        },
+        {
+          "id": "meituan-10",
+          "title": "吃喝玩乐内部优惠",
+          "description": "专属大额吃喝玩乐红包",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/bLfJbhjz",
+          "icon": "meituan/chwl.png"
+        },        
+        {
+          "id": "meituan-11",
+          "title": "吃喝玩乐-大牌2折起",
+          "description": "每日10点爆品上新！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/wydaNtxz",
+          "icon": "meituan/chwl.png"
+        },        
+        {
+          "id": "meituan-12",
+          "title": "美团景点门票",
+          "description": "164元门票神券优惠！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/yFQoHe0z",
+          "icon": "meituan/mtmenpiao.png"
+        },
+        {
+          "id": "meituan-13",
+          "title": "暑期水乐园门票",
+          "description": "夏季玩水提前囤票3折起",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/XuN3o45z",
+          "icon": "meituan/mtmenpiao.png"
+        },
+        {
+          "id": "meituan-14",
+          "title": "民宿大促销",
+          "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/ES3k5znm7eO2yeB",
+          "dataType": "wxapp",
+          "icon": "meituan/mtminsu.png"
+        },
+        {
+          "id": "meituan-15",
+          "title": "酒店囤货节",
+          "description": "每日最高可领350元券",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/Sv3J94Kz",
+          "icon": "meituan/mtminsu.png"
+        },
+        {
+          "id": "meituan-16",
+          "title": "吃喝玩乐全品类好货",
+          "description": "66元红包免费领！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/8TppLhlz",
+          "icon": "meituan/chwl.png"
+        },
+        {
+          "id": "meituan-17",
+          "title": "美团买药",
+          "description": "美团买药天天低价，不止5折",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/OI42IMAz",
+          "icon": "meituan/mtmy.png"
+        }, 
+        {
+          "id": "meituan-18",
+          "title": "美团水果专场",
+          "description": "领水果神券99-30/69-25",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/huSIdopz",
+          "icon": "meituan/shuiguo.png"
+        },             
+        {
+          "id": "meituan-19",
+          "title": "美团按摩洗牙",
+          "description": "美容美体/spa/口腔等，低至1折",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/lQka4Eyz",
+          "icon": "meituan/meirong.png"
+        },
+        {
+          "id": "meituan-20",
+          "title": "美团洗衣保洁",
+          "description": "洗衣保洁全场9.9元/件起",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/LsKmRkuz",
+          "icon": "meituan/xiyi.png"
+        },                          
+        {
+          "id": "meituan-21",
+          "title": "美团闪购-鲜花专场",
+          "description": "鲜花3折起，领券满98减7元。",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/Rp8zaouz",
+          "icon": "meituan/xianhua.png"
+        }
+      ]
+    }
+  ]
+} 

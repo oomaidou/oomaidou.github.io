@@ -8,6 +8,10 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+# Google Analytics 4 配置
+[services.googleAnalytics]
+  ID = "G-H4VLTG8CRF"
+
 # PaperMod 主题配置
 [params]
   env = "production"

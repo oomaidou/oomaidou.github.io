@@ -80,11 +80,11 @@
         },
         {
           "id": "meituan-9",
-          "title": "15.9抢600元年卡",
+          "title": "4.9抢180元卡",
           "description": "复制后，打开美团App领",
           "type": "copy",
           "action": "一键复制",
-          "content": "1 %复制信息#% 打开团App http:/¥4eODFlMWUzYjA¥ 领",
+          "content": "1 %复制信息#% 打开团App http:/¥cpZmM3YjZiODM¥ 领",
           "icon": "meituan/shenquan.png"
         },
         {
@@ -116,12 +116,12 @@
         },
         {
           "id": "meituan-13",
-          "title": "暑期水乐园门票",
-          "description": "夏季玩水提前囤票3折起",
-          "type": "link",
-          "action": "立即领取",
-          "url": "http://dpurl.cn/XuN3o45z",
-          "icon": "meituan/mtmenpiao.png"
+          "title": "杜蕾斯活动",
+          "description": "复制后，打开美团App领",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "1 %复制信息#% 打开团App http:/¥8aNjBjNWIwZDU¥ 领",
+          "icon": "meituan/shenquan.png"
         },
         {
           "id": "meituan-14",

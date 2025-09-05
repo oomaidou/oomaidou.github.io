@@ -1,4 +1,4 @@
-{{- /* 扩展 PaperMod 主题的 head 部分，添加网站统计代码 */ -}}
+{{- /* 扩展PaperMod主题head部分的正确方式 */ -}}
 
 {{- /* 百度统计代码 */ -}}
 <script>
@@ -10,6 +10,3 @@ var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(hm, s);
 })();
 </script>
-
-{{- /* Google Analytics 4 代码 (Hugo 内置支持) */ -}}
-{{ template "_internal/google_analytics.html" . }}

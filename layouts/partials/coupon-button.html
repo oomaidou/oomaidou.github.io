@@ -1,0 +1,57 @@
+{{/*
+优惠按钮组件模板
+用法：
+{{ partial "coupon-button.html" (dict 
+    "type" "link|copy|wxapp" 
+    "title" "优惠标题" 
+    "content" "链接或复制内容" 
+    "description" "描述文字"
+    "platform" "平台名称(可选)"
+) }}
+*/}}
+
+{{ $type := .type }}
+{{ $title := .title }}
+{{ $content := .content }}
+{{ $description := .description | default "" }}
+{{ $platform := .platform | default "" }}
+{{ $id := printf "coupon-%d" (now.Unix) }}
+
+<div class="coupon-item">
+    {{ if eq $type "link" }}
+        {{/* 链接形式 - 直接跳转 */}}
+        <div class="coupon-link">
+            <span class="coupon-emoji">🔥</span>
+            <a href="{{ $content }}" target="_blank" class="coupon-link-btn">{{ $title }}</a>
+            {{ if $description }}
+                <span class="coupon-desc">{{ $description }}</span>
+            {{ end }}
+        </div>
+    {{ else if eq $type "copy" }}
+        {{/* 密令形式 - 复制按钮 */}}
+        <div class="coupon-copy">
+            <span class="coupon-emoji">💰</span>
+            <span class="coupon-title">{{ $title }}：</span>
+            <span id="{{ $id }}" class="coupon-code">{{ $content }}</span>
+            <button onclick="copyToClipboard('#{{ $id }}', '复制成功！{{ if $platform }}打开{{ $platform }}app领取{{ else }}打开对应app领取{{ end }}')" class="coupon-copy-btn">
+                📋 一键复制
+            </button>
+            {{ if $description }}
+                <div class="coupon-desc">{{ $description }}</div>
+            {{ end }}
+        </div>
+    {{ else if eq $type "wxapp" }}
+        {{/* 微信小程序形式 - 复制提示微信打开 */}}
+        <div class="coupon-wxapp">
+            <span class="coupon-emoji">🎯</span>
+            <span class="coupon-title">{{ $title }}：</span>
+            <span id="{{ $id }}" data-type="wxapp" class="coupon-code">{{ $content }}</span>
+            <button onclick="copyToClipboard('#{{ $id }}', '复制成功！打开任一微信粘贴')" class="coupon-copy-btn wxapp">
+                📋 复制打开微信
+            </button>
+            {{ if $description }}
+                <div class="coupon-desc">{{ $description }}</div>
+            {{ end }}
+        </div>
+    {{ end }}
+</div>

@@ -64,6 +64,10 @@ buildExpired = false
   url = "/coupons/"
   weight = 20
 
+# 允许在Markdown中使用HTML
+[markup.goldmark.renderer]
+  unsafe = true
+
 # 多语言支持
 [languages.zh-cn]
   languageName = "简体中文"

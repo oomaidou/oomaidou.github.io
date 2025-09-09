@@ -3,6 +3,7 @@
 {{- /* 获取最新的一篇文章 */ -}}
 {{- $posts := where .Site.RegularPages "Section" "posts" -}}
 {{- $posts = where $posts ".Draft" false -}}
+{{- $posts = $posts.ByDate.Reverse -}}
 {{- $latestPost := index $posts 0 -}}
 
 <div class="main">

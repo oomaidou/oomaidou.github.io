@@ -43,7 +43,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://oomaidou.github.io/"
+            --baseURL "https://www.shenquanquan.com/"
 
       - name: Setup Pages
         id: pages

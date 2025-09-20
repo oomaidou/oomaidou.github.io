@@ -161,8 +161,11 @@ draft: false
 <div class="deal-content">
 <div class="deal-title">🔥 会场一：外卖红包天天领</div>
 <div class="deal-items">
-<strong>✅必得：</strong>38-18｜58-20｜88-25<br>
-<strong>✅随机立减：</strong>20/25减5/9｜28减11/18
+<strong>✅人人必得：</strong>38-18｜58-20｜88-25<br>
+<strong>✅大部分得：</strong>20-10｜28减11/18<br>
+<strong>✅随机立减：</strong>20/25减5/9｜28减11/18<br>
+<strong>⏰</strong>注意！20号当天还有限时抢！<br>
+<strong>✅</strong>10点/11点限时抢限量神券 28-18
 </div>
 </div>
 

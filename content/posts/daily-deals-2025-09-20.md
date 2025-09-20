@@ -186,7 +186,7 @@ draft: false
 <h3>🛒 饿了么淘宝闪购活动</h3>
 
 <div class="deal-content">
-<div class="deal-title">淘宝闪购：15-11红包（新老用户都有）</div>
+<div class="deal-title">淘宝闪购：15-12红包（新老用户都有）</div>
 <div class="deal-items">
 <strong>新用户更大：</strong>19元无门槛红包<br>
 <strong>活动入口：</strong>淘宝闪购，淘宝闪购相关的都领一遍

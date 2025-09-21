@@ -12,7 +12,7 @@
           "description": "每天可领，品质外卖！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/264tGlv",
+          "url": "https://u.jd.com/PDpMDGh",
           "icon": "jingdong/jd.png"
         },
         {
@@ -21,16 +21,16 @@
           "description": "京东国补，速来领取！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/2gxkv3u",
+          "url": "https://u.jd.com/PDpM2er",
           "icon": "jingdong/jdgb.png"
         },
         {
           "id": "jd-3",
-          "title": "京东百亿补贴",
-          "description": "百亿补贴，诚意拉满",
+          "title": "京喜自营天天特价",
+          "description": "天天特价 低至0.99",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/2a4solz",
+          "url": "https://u.jd.com/PDp2htM",
           "icon": "jingdong/jdbt.png"
         },
         {
@@ -39,7 +39,7 @@
           "description": "超值厂货，源头直发",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/214w4l3",
+          "url": "https://u.jd.com/PapSpZa",
           "icon": "jingdong/jdbt.png"
         }
       ]

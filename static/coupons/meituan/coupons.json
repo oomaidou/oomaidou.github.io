@@ -53,11 +53,11 @@
         },
         {
           "id": "meituan-6",
-          "title": "冰品节天天送免单",
-          "description": "随机抽取35-35免单券！",
+          "title": "美团闪购-零食专场",
+          "description": "最高领券满59-30 ",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/IfIbgS8z",
+          "url": "http://dpurl.cn/qtic0dhz",
           "icon": "meituan/meituan.png"
         },
         {
@@ -66,7 +66,7 @@
           "description": "4.9元喝奶茶，福利超多",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/DNeWHozz",
+          "url": "http://dpurl.cn/WGGqheVz",
           "icon": "meituan/meituan.png"
         },
         {
@@ -84,7 +84,7 @@
           "description": "复制后，打开美团App领",
           "type": "copy",
           "action": "一键复制",
-          "content": "1 %复制信息#% 打开团App http:/¥cpZmM3YjZiODM¥ 领",
+          "content": "1 %复制信息#% 打开团App http:/¥vvNDQ0ZGI4YzU¥ 领",
           "icon": "meituan/shenquan.png"
         },
         {
@@ -108,10 +108,10 @@
         {
           "id": "meituan-12",
           "title": "美团景点门票",
-          "description": "164元门票神券优惠！",
+          "description": "148元门票神券优惠！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/yFQoHe0z",
+          "url": "http://dpurl.cn/Xh2YyhRz",
           "icon": "meituan/mtmenpiao.png"
         },
         {
@@ -129,17 +129,17 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/ES3k5znm7eO2yeB",
+          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/tib8bVv8aNjNFsu",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },
         {
           "id": "meituan-15",
           "title": "酒店囤货节",
-          "description": "每日最高可领350元券",
+          "description": "每日最高可领650元券",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/Sv3J94Kz",
+          "url": "hhttp://dpurl.cn/Gl3gxEkz",
           "icon": "meituan/mtminsu.png"
         },
         {

@@ -157,33 +157,43 @@
 /* 移动端适配 */
 @media (max-width: 768px) {
     .custom-nav {
-        flex-direction: column;
-        padding: 16px;
+        flex-direction: row;
+        padding: 12px 16px;
+        align-items: center;
     }
 
     .logo-left {
-        margin-bottom: 12px;
         min-width: auto;
-        text-align: center;
+        text-align: left;
+        flex: 0 0 auto;
+    }
+
+    .logo-left a {
+        font-size: 1.1em;
     }
 
     .center-content {
-        order: 2;
+        flex: 1;
+        margin: 0 10px;
     }
 
     .site-title {
-        font-size: 1.2em;
-        margin-bottom: 6px;
+        font-size: 1.1em;
+        margin-bottom: 4px;
     }
 
     .center-menu {
-        gap: 15px;
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    .center-menu li a {
+        font-size: 0.9em;
+    }
+
     .logo-right {
-        display: none;
+        min-width: 60px;
     }
 }
 

@@ -52,6 +52,9 @@ buildExpired = false
   # 自定义副标题
   subtitle = "神券券 - 为您提供最新、最全的优惠信息"
 
+  # 确保使用regular模式，不是profile模式
+  mode = "regular"
+
   # 社交链接
   [[params.socialIcons]]
     name = "github"

@@ -17,7 +17,7 @@ buildExpired = false
   env = "production"
   title = "神券券"
   description = "神券券 - 最新优惠信息，省钱必备"
-  keywords = ["优惠券", "折扣", "省钱", "购物"]
+  keywords = ["优惠券", "折扣", "省钱", "购物", "外卖", "美团", "饿了么", "京东", "淘宝闪购"]
   author = "神券券"
   
   # 显示相关配置

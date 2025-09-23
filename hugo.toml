@@ -1,6 +1,6 @@
 baseURL = "https://www.shenquanquan.com/"
 languageCode = "zh-cn"
-title = "优惠信息头条"
+title = "神券券"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -15,10 +15,10 @@ buildExpired = false
 # PaperMod 主题配置
 [params]
   env = "production"
-  title = "优惠信息头条"
-  description = "最新优惠信息，省钱必备"
+  title = "神券券"
+  description = "神券券 - 最新优惠信息，省钱必备"
   keywords = ["优惠券", "折扣", "省钱", "购物"]
-  author = "优惠信息头条"
+  author = "神券券"
   
   # 显示相关配置
   ShowReadingTime = true
@@ -41,10 +41,16 @@ buildExpired = false
   disableThemeToggle = true
   disableSearchToggle = true
 
+  # 网站图标配置
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+
   # 使用自定义首页模板显示最新文章
   
   # 自定义副标题
-  subtitle = "为您提供最新、最全的优惠信息"
+  subtitle = "神券券 - 为您提供最新、最全的优惠信息"
 
   # 社交链接
   [[params.socialIcons]]

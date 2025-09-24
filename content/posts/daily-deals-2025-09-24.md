@@ -189,6 +189,22 @@ draft: false
 </div>
 
 <div class="deal-section">
+<h3>🛒 饿了么淘宝闪购活动</h3>
+
+<div class="deal-content">
+<div class="deal-title">淘宝闪购：15-12红包（新老用户都有）</div>
+<div class="deal-items">
+<strong>新用户更大：</strong>19元无门槛红包<br>
+<strong>活动入口：</strong>淘宝闪购，淘宝闪购相关的都领一遍
+</div>
+<div style="margin-top: 15px; text-align: center;">
+<a href="/coupons/" style="background: linear-gradient(135deg, #ff6b35, #ff8c42); color: white; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; display: inline-block;">🛒 领取红包</a>
+</div>
+</div>
+
+</div>
+
+<div class="deal-section">
 <h3>🎁 今日上新单品</h3>
 
 <div class="product-grid">

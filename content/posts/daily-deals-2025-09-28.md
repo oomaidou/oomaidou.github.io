@@ -232,7 +232,7 @@ draft: false
 </div>
 
 <div class="product-card">
-<img src="/images/daily/2025-09-28/TOPToY.jpeg" alt="TOPTOY品牌日">
+<img src="/images/daily/2025-09-28/TOPTOY.jpeg" alt="TOPTOY品牌日">
 <div class="product-title">TOPTOY品牌日</div>
 <div class="product-price">精品积木低至五折起</div>
 </div>

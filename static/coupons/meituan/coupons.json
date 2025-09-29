@@ -35,12 +35,12 @@
         },
         {
           "id": "meituan-3",
-          "title": "美团周三外卖节",
-          "description": "每周三领-13元大红包",
-          "type": "link",
-          "action": "立即领取",
-          "url": "http://dpurl.cn/6Lx24cgz",
-          "icon": "meituan/meituan.png"
+          "title": "美团-拼好饭",
+          "description": "复制后，打开美团App领",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "1 %复制信息#% 打开团App http:/¥e5M2YzZDM1OWM¥一起领",
+          "icon": "meituan/shenquan.png"
         },
         {
           "id": "meituan-4",

@@ -4,7 +4,7 @@
  */
 
 function CouponRenderer() {
-  this.platforms = ['meituan', 'eleme', 'jingdong', 'shenghuo'];
+  this.platforms = ['meituan', 'eleme', 'jingdong', 'shuang11', 'shenghuo'];
 }
 
 /**

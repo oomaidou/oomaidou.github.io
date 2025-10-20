@@ -1,7 +1,7 @@
 {
   "platform": "shuang11",
   "platformName": "双11活动",
-  "icon": "shuang11/jd.png",
+  "icon": "shuang11/taobao.png",
   "sections": [
     {
       "title": "京东双11专区",
@@ -33,27 +33,27 @@
           "id": "s11-tb-1",
           "title": "淘宝双11红包",
           "description": "淘宝双11超级红包，每天可领，最高11111元！",
-          "type": "link",
-          "action": "立即领取",
-          "url": "https://s.click.taobao.com/Ny2RF9q",
+          "type": "copy",
+          "action": "复制淘口令",
+          "content": "57￥ CZ001 3wgtf2fmKSl￥ https://m.tb.cn/h.SjvrvPR  双11超级红包主会场",
           "icon": "shuang11/taobao.png"
         },
         {
           "id": "s11-tb-2",
           "title": "淘宝双11现货主会场",
           "description": "双11现货主会场，海量好货即买即发！",
-          "type": "link",
-          "action": "立即查看",
-          "url": "https://s.click.taobao.com/LI7gC9q",
+          "type": "copy",
+          "action": "复制淘口令",
+          "content": "19￥ HU287 vQUJf2fMmhL￥ https://m.tb.cn/h.SjhF7pl  双11现货主会场",
           "icon": "shuang11/taobao.png"
         },
         {
           "id": "s11-tb-3",
           "title": "淘宝双11美妆会场",
           "description": "双11美妆大牌会场，大牌低至5折起！",
-          "type": "link",
-          "action": "立即查看",
-          "url": "https://s.click.taobao.com/HPmDgwp",
+          "type": "copy",
+          "action": "复制淘口令",
+          "content": "57￥ HU293 dsskf2foU7O￥ https://m.tb.cn/h.SjvHr2X  大牌美妆",
           "icon": "shuang11/taobao.png"
         }
       ]

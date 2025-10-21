@@ -23,15 +23,6 @@
           "action": "立即查看",
           "url": "https://u.jd.com/BDZjjCI",
           "icon": "shuang11/jd.png"
-        },
-        {
-          "id": "s11-jd-1",
-          "title": "京东双11红包",
-          "description": "京东双11专属红包，最高可领11111元！",
-          "type": "link",
-          "action": "立即领取",
-          "url": "tbopen://m.taobao.com/tbopen/index.html?&action=ali.open.nav&module=h5&h5Url=https%3A%2F%2Fm.duanqu.com%2F%3F_ariver_appid%3D8251537%26page%3Dplugin-private%253A%252F%252F2021003183669766%252Fpages%252Fwh-coupon-guide%252Findex%253Fscene%253Db31984d5231f40a392722ec8349f7031",
-          "icon": "shuang11/jd.png"
         }
       ]
     },

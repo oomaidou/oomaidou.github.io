@@ -116,12 +116,12 @@
         },
         {
           "id": "meituan-13",
-          "title": "杜蕾斯活动",
-          "description": "复制后，打开美团App领",
-          "type": "copy",
-          "action": "一键复制",
-          "content": "1 %复制信息#% 打开团App http:/¥8aNjBjNWIwZDU¥ 领",
-          "icon": "meituan/shenquan.png"
+          "title": "华住酒店全国券",
+          "description": "每日最高可领650元券",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/tLccCoXz",
+          "icon": "meituan/mtminsu.png"
         },
         {
           "id": "meituan-14",
@@ -129,7 +129,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/tib8bVv8aNjNFsu",
+          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/51LhdY9PGmnJkfm",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },
@@ -139,7 +139,7 @@
           "description": "每日最高可领650元券",
           "type": "link",
           "action": "立即领取",
-          "url": "hhttp://dpurl.cn/Gl3gxEkz",
+          "url": "http://dpurl.cn/Gl3gxEkz",
           "icon": "meituan/mtminsu.png"
         },
         {

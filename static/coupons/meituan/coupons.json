@@ -34,6 +34,15 @@
           "icon": "meituan/meituan.png"
         },
         {
+          "id": "meituan-6",
+          "title": "美团闪购-天天红包",
+          "description": "新客领券20-18 ",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/5FGTBccz",
+          "icon": "meituan/meituan.png"
+        },
+        {
           "id": "meituan-3",
           "title": "美团-拼好饭",
           "description": "复制后，打开美团App领",
@@ -51,16 +60,7 @@
           "url": "http://dpurl.cn/rQYIJBvz",
           "icon": "meituan/shenquan.png"
         },
-        {
-          "id": "meituan-6",
-          "title": "美团闪购-零食专场",
-          "description": "最高领券满59-30 ",
-          "type": "link",
-          "action": "立即领取",
-          "url": "http://dpurl.cn/qtic0dhz",
-          "icon": "meituan/meituan.png"
-        },
-        {
+                {
           "id": "meituan-7",
           "title": "大牌饮品商品券",
           "description": "4.9元喝奶茶，福利超多",
@@ -84,7 +84,7 @@
           "description": "复制后，打开美团App领",
           "type": "copy",
           "action": "一键复制",
-          "content": "1 %复制信息#% 打开团App http:/¥vvNDQ0ZGI4YzU¥ 领",
+          "content": "1 %复制信息#% 打开团App http:/¥8hODg1NTQ4Nzg¥一起领",
           "icon": "meituan/shenquan.png"
         },
         {
@@ -129,7 +129,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/51LhdY9PGmnJkfm",
+          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/BARHNcQNeLOcwju",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },

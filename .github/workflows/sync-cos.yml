@@ -1,0 +1,30 @@
+name: Sync miniprogram data to COS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'miniprogram-data/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install coscmd
+        run: pip install coscmd
+
+      - name: Configure coscmd
+        run: |
+          coscmd config \
+            -a ${{ secrets.TENCENT_SECRET_ID }} \
+            -s ${{ secrets.TENCENT_SECRET_KEY }} \
+            -b ${{ secrets.COS_BUCKET }} \
+            -r ${{ secrets.COS_REGION }}
+
+      - name: Sync to COS
+        run: |
+          coscmd upload -r miniprogram-data/coupons/ coupons/
+          echo "Sync completed at $(date)"

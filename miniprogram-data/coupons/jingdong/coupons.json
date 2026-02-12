@@ -9,37 +9,55 @@
         {
           "id": "jd-1",
           "title": "京东外卖红包",
-          "description": "每天可领，品质外卖！",
+          "description": "12元红包！复制打开京东app领取",
           "type": "link",
-          "action": "立即领取",
-          "url": "https://u.jd.com/ADuMKe2",
+          "action": "复制京口令",
+          "url": "￥P8zjD8WjJlsYpKit￥ MF5681",
           "icon": "jingdong/jd.png"
         },
         {
           "id": "jd-2",
           "title": "京东国贴专区",
-          "description": "京东国补，速来领取！",
+          "description": "国补85折，复制打开京东app领取",
           "type": "link",
-          "action": "立即领取",
-          "url": "https://u.jd.com/AOiVY2W",
+          "action": "复制京口令",
+          "url": "￥H6CSiC26cyGPkwJA￥ MF8555",
           "icon": "jingdong/jdgb.png"
         },
         {
           "id": "jd-3",
-          "title": "京喜自营天天特价",
-          "description": "天天特价 低至0.99",
+          "title": "京享红包",
+          "description": "无门槛红包最高26999",
           "type": "link",
-          "action": "立即领取",
-          "url": "https://u.jd.com/AOIZ52q",
+          "action": "复制京口令",
+          "url": "！NCEfnFIl7Rq2ggPT！ CA1507",
           "icon": "jingdong/jdbt.png"
         },
         {
           "id": "jd-4",
-          "title": "京东超值厂货",
+          "title": "京东特价专区",
+          "description": "天天特价 低至0.99",
+          "type": "link",
+          "action": "复制京口令",
+          "url": "￥DD40I4gyxUVfn5Cm￥ MU5104",
+          "icon": "jingdong/jdbt.png"
+        },
+        {
+          "id": "jd-5",
+          "title": "京东隐藏优惠券",
+          "description": "专属隐藏优惠券",
+          "type": "link",
+          "action": "复制京口令",
+          "url": "￥S2MkK4VIbwgjG2GT￥ CA1565",
+          "icon": "jingdong/jdbt.png"
+        },
+        {
+          "id": "jd-6",
+          "title": "京东精选推荐",
           "description": "超值厂货，源头直发",
           "type": "link",
-          "action": "立即领取",
-          "url": "https://u.jd.com/AaudGWI",
+          "action": "复制京口令",
+          "url": "￥WDYzS0yYzJmEwLri￥ CA8680",
           "icon": "jingdong/jdbt.png"
         }
       ]

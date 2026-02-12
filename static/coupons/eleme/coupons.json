@@ -9,7 +9,7 @@
         {
           "id": "eleme-1",
           "title": "淘宝闪购红包",
-          "description": "复制后，去淘宝app领。",
+          "description": "领15元红包。复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥7xoeUgBJ5rs￥/ HU7405",
@@ -18,7 +18,7 @@
         {
           "id": "eleme-2",
           "title": "淘宝闪购-叠红包",
-          "description": "复制后，去淘宝app领。",
+          "description": "最高20元，可叠加",
           "type": "copy",
           "action": "一键复制",
           "content": "￥iY1QUgBrVSd￥/ HU7405",
@@ -27,7 +27,7 @@
         {
           "id": "eleme-3",
           "title": "淘宝闪购-新客福利",
-          "description": "复制后，去淘宝app领。",
+          "description": "来闪购，新客享免单福利",
           "type": "copy",
           "action": "一键复制",
           "content": "￥0C8FUgBsua3￥/ HU7405",
@@ -36,7 +36,7 @@
         {
           "id": "eleme-4",
           "title": "淘宝闪购-爆品好价",
-          "description": "复制后，去淘宝app领。",
+          "description": "爆品9.9元起，全场免运费",
           "type": "copy",
           "action": "一键复制",
           "content": "￥IvejUgz7jmE￥/ HU7405",
@@ -45,7 +45,7 @@
         {
           "id": "eleme-5",
           "title": "淘宝闪购-夜宵专场",
-          "description": "每晚8点抢免单红包。复制后，去淘宝app领。",
+          "description": "每晚8点抢免单。复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥fwjkUgzjIt1￥/ HU7405",
@@ -54,7 +54,7 @@
         {
           "id": "eleme-6",
           "title": "饿了么外卖红包",
-          "description": "复制后，去淘宝app领。",
+          "description": "抢66元大红包！复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥riObUgzkbYw￥/ HU7405",
@@ -63,7 +63,7 @@
         {
           "id": "eleme-7",
           "title": "红包天天领会场",
-          "description": "复制后，去淘宝app领。",
+          "description": "天天可领。复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥MJzjUgzkS3m￥/ HU7405",
@@ -72,7 +72,7 @@
         {
           "id": "eleme-8",
           "title": "闪购爆品1分吃",
-          "description": "复制后，去淘宝app领。",
+          "description": "免凑单免运费。复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥8S4pUgzPtiq￥/ HU7405",
@@ -99,7 +99,7 @@
         {
           "id": "eleme-11",
           "title": "饿了么地铁商圈红包",
-          "description": "地铁附近商圈、红包领不停",
+          "description": "复制后，在微信中粘贴使用",
           "type": "copy",
           "action": "一键复制",
           "content": "饿了么地铁商圈红包:mp://JClF27CsMtnIbVH",
@@ -135,7 +135,7 @@
         {
           "id": "eleme-15",
           "title": "淘宝闪购爆火好店",
-          "description": "抢大额红包,复制后，去淘宝app领。",
+          "description": "抢25元红包,复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥Vu4KUgzsDZf￥/ HU7405",
@@ -153,7 +153,7 @@
         {
           "id": "eleme-17",
           "title": "全国超市便利活动",
-          "description": "复制后，去淘宝app领。",
+          "description": "领5元红包！复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥ONvzUgzLZ2h￥/ HU7405",
@@ -161,8 +161,17 @@
         },
         {
           "id": "eleme-18",
+          "title": "天猫超市品牌馆",
+          "description": "年货节商品低至6折！复制后淘宝app领",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥cWzmUmWAP09￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-19",
           "title": "医药全国门店活动",
-          "description": "复制后，去淘宝app领。",
+          "description": "领8元红包！复制后淘宝app领",
           "type": "copy",
           "action": "一键复制",
           "content": "￥ffICUgzK0WR￥/ HU7405",

@@ -9,7 +9,7 @@
         {
           "id": "jd-1",
           "title": "京东外卖红包",
-          "description": "每天可领，品质外卖！",
+          "description": "12元红包！每天可领！",
           "type": "link",
           "action": "立即领取",
           "url": "https://u.jd.com/ADuMKe2",
@@ -26,20 +26,38 @@
         },
         {
           "id": "jd-3",
-          "title": "京喜自营天天特价",
-          "description": "天天特价 低至0.99",
+          "title": "京享红包",
+          "description": "无门槛红包最高26999",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/AOIZ52q",
+          "url": "https://u.jd.com/lg1FCtV",
           "icon": "jingdong/jdbt.png"
         },
         {
           "id": "jd-4",
-          "title": "京东超值厂货",
-          "description": "超值厂货，源头直发",
+          "title": "京东隐藏优惠券",
+          "description": "专属隐藏优惠券",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/AaudGWI",
+          "url": "https://u.jd.com/lr1x0e7",
+          "icon": "jingdong/jdbt.png"
+        },
+        {
+          "id": "jd-5",
+          "title": "京东限时优惠券",
+          "description": "限时30元优惠券",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/lagtg2m",
+          "icon": "jingdong/jdbt.png"
+        },
+        {
+          "id": "jd-6",
+          "title": "京东特价专区",
+          "description": "天天特价 低至0.99",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/lg195tF",
           "icon": "jingdong/jdbt.png"
         }
       ]

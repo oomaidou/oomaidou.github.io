@@ -17,39 +17,39 @@
         },
         {
           "id": "meituan-2",
-          "title": "红包天天领会场",
-          "description": "天天可领，可叠加使用！",
+          "title": "美团外卖红包2",
+          "description": "11元大额红包，可叠加使用！",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/6Lx24cgz",
+          "url": "1 %复制信息#% 打开团App http:/¥49YTY4YTE4Y2Y¥一起领",
           "icon": "meituan/meituan.png"
-        },
-        {
-          "id": "meituan-22",
-          "title": "美团外卖红包3",
-          "description": "天天可领，可叠加使用！",
-          "type": "link",
-          "action": "复制团口令",
-          "url": "http://dpurl.cn/i3nNWMUz",
-          "icon": "meituan/meituan.png"
-        },
+        },        
         {
           "id": "meituan-6",
           "title": "美团闪购-天天红包",
           "description": "新客领券20-18 ",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/watoqesz",
+          "url": "1 %复制信息#% 打开团App http:/¥m2OTk1MjdlYzU¥一起领",
           "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-3",
-          "title": "美团-拼好饭",
-          "description": "复制后，打开美团App领",
+          "title": "美团-拼好饭红包",
+          "description": "大牌6.9起，免配送免打包",
           "type": "copy",
           "action": "复制团口令",
-          "content": "1 %复制信息#% 打开团App http:/¥e5MDU5Y2JmMzU¥一起领",
+          "content": "1 %复制信息#% 打开团App http:/¥jiOGY2N2EzM2Q¥一起领",
           "icon": "meituan/shenquan.png"
+        },
+        {
+          "id": "meituan-22",
+          "title": "美团周三外卖节红包",
+          "description": "每周三来领，9-13元红包！",
+          "type": "link",
+          "action": "复制团口令",
+          "url": "1 %复制信息#% 打开团App http:/¥clNzQ2ZWY5ZmM¥一起领",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-4",
@@ -57,52 +57,43 @@
           "description": "每月18日，领18元红包！",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/rQYIJBvz",
+          "url": "1 %复制信息#% 打开团App http:/¥hpYzI2NGIyODk¥一起领",
           "icon": "meituan/shenquan.png"
         },
-                {
+        {
           "id": "meituan-7",
           "title": "大牌饮品商品券",
           "description": "4.9元喝奶茶，福利超多",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/2l5R4taz",
+          "url": "1 %复制信息#% 打开团App http:/¥lmMWVkOGE1Yjg¥一起领",
           "icon": "meituan/meituan.png"
-        },
-        {
-          "id": "meituan-8",
-          "title": "美团新人专享活动",
-          "description": "领新人百元福利",
-          "type": "link",
-          "action": "复制团口令",
-          "url": "http://dpurl.cn/WLJxasvz",
-          "icon": "meituan/meituan.png"
-        },
+        },        
         {
           "id": "meituan-9",
-          "title": "19.9抢1200元卡",
-          "description": "复制后，打开美团App领",
+          "title": "19.9抢1200元神券包",
+          "description": "每月20张5元神券包",
           "type": "copy",
           "action": "复制团口令",
-          "content": "1 %复制信息#% 打开团App http:/¥d3OTJkYzQwOTQ¥一起领",
+          "content": "1 %复制信息#% 打开团App http:/¥vyNzFjMjZjZWY¥一起领",
           "icon": "meituan/shenquan.png"
         },
         {
           "id": "meituan-10",
           "title": "吃喝玩乐内部优惠",
-          "description": "专属大额吃喝玩乐红包",
+          "description": "每周5抢100-20神券",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/bLfJbhjz",
+          "url": "1 %复制信息#% 打开团App http:/¥xeOTFiMTIwNzg¥一起领",
           "icon": "meituan/chwl.png"
         },        
         {
           "id": "meituan-11",
-          "title": "吃喝玩乐-大牌2折起",
-          "description": "每日10点爆品上新！",
+          "title": "美团闪购-天天抽免单",
+          "description": "神券16-16,整点限时先到先🉐",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/wydaNtxz",
+          "url": "1 %复制信息#% 打开团App http:/¥30ZTgyZDBmYzY¥一起领",
           "icon": "meituan/chwl.png"
         },        
         {
@@ -111,16 +102,16 @@
           "description": "148元门票神券优惠！",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/QPpNVsnz",
+          "url": "1 %复制信息#% 打开团App http:/¥7lM2Y1OGFiMDY¥一起领",
           "icon": "meituan/mtmenpiao.png"
         },
         {
           "id": "meituan-13",
           "title": "华住酒店全国券",
-          "description": "每日最高可领650元券",
+          "description": "领650元券（50/100/200/300）",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/tLccCoXz",
+          "url": "1 %复制信息#% 打开团App http:/¥8wZDdiMjk4Mjc¥一起领",
           "icon": "meituan/mtminsu.png"
         },
         {
@@ -129,7 +120,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "复制团口令",
-          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/XiwElr6xlOB5YAm",
+          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/o0sapDhjeiTmXbu",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },
@@ -139,34 +130,34 @@
           "description": "每日最高可领650元券",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/Hazeakqz",
+          "url": "1 %复制信息#% 打开团App http:/¥c3YTA1N2RiOWM¥一起领",
           "icon": "meituan/mtminsu.png"
         },
         {
           "id": "meituan-16",
-          "title": "吃喝玩乐全品类好货",
-          "description": "66元红包免费领！",
+          "title": "美团机票火车票红包",
+          "description": "机票新客：15元红包；火车票：5元红包！",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/8TppLhlz",
+          "url": "1 %复制信息#% 打开团App http:/¥igZmQ1MTYwYWQ¥一起领",
           "icon": "meituan/chwl.png"
         },
         {
           "id": "meituan-17",
           "title": "美团买药",
-          "description": "美团买药天天低价，不止5折",
+          "description": "领美团买药87元券包",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/lhAcFrCz",
+          "url": "1 %复制信息#% 打开团App http:/¥k7MjMzMDBkNjk¥一起领",
           "icon": "meituan/mtmy.png"
         }, 
         {
           "id": "meituan-18",
           "title": "美团水果专场",
-          "description": "领水果神券99-30/69-25",
+          "description": "领水果神券99-30/69-25/59-20",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/U4EtR46z",
+          "url": "1 %复制信息#% 打开团App http:/¥lgMzFiY2IyY2Y¥一起领",
           "icon": "meituan/shuiguo.png"
         },             
         {
@@ -175,7 +166,7 @@
           "description": "美容美体/spa/口腔等，低至1折",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/MYNqttbz",
+          "url": "1 %复制信息#% 打开团App http:/¥ogMWVlNmU4N2U¥一起领",
           "icon": "meituan/meirong.png"
         },
         {
@@ -184,16 +175,16 @@
           "description": "洗衣保洁全场9.9元/件起",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/EWOd798z",
+          "url": "1 %复制信息#% 打开团App http:/¥pcNjc2NjQyMDQ¥一起领",
           "icon": "meituan/xiyi.png"
         },                          
         {
           "id": "meituan-21",
           "title": "美团闪购-鲜花专场",
-          "description": "鲜花3折起，领券满98减7元。",
+          "description": "鲜花3折起，领30元鲜花券包。",
           "type": "link",
           "action": "复制团口令",
-          "url": "http://dpurl.cn/RDgTOdBz",
+          "url": "1 %复制信息#% 打开团App http:/¥qqN2FlMWNlMDQ¥一起领",
           "icon": "meituan/xianhua.png"
         }
       ]

@@ -18,7 +18,7 @@
         {
           "id": "meituan-22",
           "title": "美团外卖红包2",
-          "description": "天天可领，可叠加使用！",
+          "description": "11元大额红包，可叠加使用！",
           "type": "link",
           "action": "立即领取",
           "url": "http://dpurl.cn/i3nNWMUz",
@@ -44,8 +44,8 @@
         },
         {
           "id": "meituan-3",
-          "title": "美团-拼好饭",
-          "description": "复制后，打开美团App领",
+          "title": "美团-拼好饭红包",
+          "description": "大牌6.9起，免配送免打包",
           "type": "copy",
           "action": "一键复制",
           "content": "1 %复制信息#% 打开团App http:/¥e5MDU5Y2JmMzU¥一起领",
@@ -80,8 +80,8 @@
         },
         {
           "id": "meituan-9",
-          "title": "19.9抢1200元卡",
-          "description": "复制后，打开美团App领",
+          "title": "19.9抢1200元神券包",
+          "description": "每月20张5元神券包",
           "type": "copy",
           "action": "一键复制",
           "content": "1 %复制信息#% 打开团App http:/¥d3OTJkYzQwOTQ¥一起领",
@@ -90,19 +90,19 @@
         {
           "id": "meituan-10",
           "title": "吃喝玩乐内部优惠",
-          "description": "专属大额吃喝玩乐红包",
+          "description": "每周5抢100-20神券",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/bLfJbhjz",
+          "url": "http://dpurl.cn/RqpOPd5z",
           "icon": "meituan/chwl.png"
         },        
         {
           "id": "meituan-11",
-          "title": "吃喝玩乐-大牌2折起",
-          "description": "每日10点爆品上新！",
+          "title": "美团闪购-天天抽免单",
+          "description": "神券16-16,整点限时先到先🉐！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/wydaNtxz",
+          "url": "http://dpurl.cn/JEkXqzGz",
           "icon": "meituan/chwl.png"
         },        
         {
@@ -129,7 +129,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/XiwElr6xlOB5YAm",
+          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/o0sapDhjeiTmXbu",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },
@@ -144,11 +144,11 @@
         },
         {
           "id": "meituan-16",
-          "title": "吃喝玩乐全品类好货",
-          "description": "66元红包免费领！",
+          "title": "美团机票火车票红包",
+          "description": "机票新客：15元红包；火车票：5元红包！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/8TppLhlz",
+          "url": "http://dpurl.cn/GNFE0G7z",
           "icon": "meituan/chwl.png"
         },
         {

@@ -85,7 +85,8 @@
           "type": "copy",
           "action": "一键复制",
           "content": "18.8极限爆涨:mp://5v2xRn7T4qtILeb",
-          "dataType": "wxapp"
+          "dataType": "wxapp",
+          "icon": "eleme/eleme.png"
         },
         {
           "id": "eleme-10",
@@ -94,7 +95,8 @@
           "type": "copy",
           "action": "一键复制",
           "content": "囤券券真省钱，过期自动退:mp://hTfjTlvmkkqlj4J",
-          "dataType": "wxapp"
+          "dataType": "wxapp",
+          "icon": "eleme/eleme.png"
         },
         {
           "id": "eleme-11",
@@ -103,7 +105,8 @@
           "type": "copy",
           "action": "一键复制",
           "content": "饿了么地铁商圈红包:mp://JClF27CsMtnIbVH",
-          "dataType": "wxapp"
+          "dataType": "wxapp",
+          "icon": "eleme/eleme.png"
         },
         {
           "id": "eleme-12",

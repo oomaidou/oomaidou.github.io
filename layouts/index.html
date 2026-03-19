@@ -1,5 +1,9 @@
 {{- define "main" }}
 
+<meta http-equiv="refresh" content="0; url=/coupons/">
+<script>window.location.replace("/coupons/");</script>
+
+{{- /* 以下内容在重定向生效前短暂显示，也供搜索引擎抓取 */ -}}
 {{- /* 获取最新的一篇文章 */ -}}
 {{- $posts := where .Site.RegularPages "Section" "posts" -}}
 {{- $posts = where $posts ".Draft" false -}}

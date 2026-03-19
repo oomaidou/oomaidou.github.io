@@ -5,6 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'  # 每天北京时间 10:00（UTC+8 = UTC 02:00）自动构建
 
 permissions:
   contents: read

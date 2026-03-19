@@ -27,10 +27,7 @@ CouponRenderer.prototype.renderPlatform = function(platform) {
       if (!container) return;
 
       var html = '<div class="platform-block" id="' + platform + '-block">';
-      
-      // 添加今日主推区域
-      html += '<div id="' + platform + '-top"></div>';
-      
+
       // 渲染各个区域
       for (var i = 0; i < data.sections.length; i++) {
         var section = data.sections[i];
@@ -50,10 +47,7 @@ CouponRenderer.prototype.renderPlatform = function(platform) {
       
       html += '</div>';
       container.innerHTML = html;
-      
-      // 渲染今日主推内容
-      self.renderTop(platform + '/top.json', platform + '-top');
-      
+
     }).catch(function(error) {
       console.error('加载' + platform + '数据失败:', error);
       // 降级处理：显示错误信息

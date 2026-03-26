@@ -109,6 +109,6 @@ draft: false
 30元无门槛这类大额券不是每天都有，出现时我们会第一时间推送。扫码关注，开启消息通知：
 
 <div style="text-align:center; margin: 1.5rem 0;">
-  <img src="/images/wechat-qrcode.jpg" alt="外卖神券探探公众号二维码" style="width:180px; height:180px; border-radius:8px;">
+  <img src="/images/wechat-qrcode.jpg" alt="外卖神券探探公众号二维码" style="width:180px; height:180px; border-radius:8px; display:block; margin:0 auto;">
   <p style="color:#888; font-size:0.9rem; margin-top:0.5rem;">微信扫码关注「外卖神券探探」</p>
 </div>

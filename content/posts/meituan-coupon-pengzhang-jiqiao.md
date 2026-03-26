@@ -114,6 +114,6 @@ draft: false
 ## 关注公众号，及时获取可膨胀大额券
 
 <div style="text-align:center; margin: 1.5rem 0;">
-  <img src="/images/wechat-qrcode.jpg" alt="外卖神券探探公众号二维码" style="width:180px; height:180px; border-radius:8px;">
+  <img src="/images/wechat-qrcode.jpg" alt="外卖神券探探公众号二维码" style="width:180px; height:180px; border-radius:8px; display:block; margin:0 auto;">
   <p style="color:#888; font-size:0.9rem; margin-top:0.5rem;">微信扫码关注「外卖神券探探」</p>
 </div>

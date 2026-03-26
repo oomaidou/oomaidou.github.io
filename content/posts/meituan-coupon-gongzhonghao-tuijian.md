@@ -50,7 +50,7 @@ draft: false
 扫码关注，建议开启「接收消息通知」，有限时大额活动时会第一时间收到推送：
 
 <div style="text-align:center; margin: 1.5rem 0;">
-  <img src="/images/wechat-qrcode.jpg" alt="外卖神券探探公众号二维码" style="width:200px; height:200px; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+  <img src="/images/wechat-qrcode.jpg" alt="外卖神券探探公众号二维码" style="width:180px; height:180px; border-radius:8px; display:block; margin:0 auto;">
   <p style="color:#666; font-size:0.95rem; margin-top:0.5rem;">微信扫码关注「外卖神券探探」</p>
 </div>
 

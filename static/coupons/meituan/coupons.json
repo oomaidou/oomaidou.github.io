@@ -18,19 +18,19 @@
         {
           "id": "meituan-22",
           "title": "美团外卖红包2",
-          "description": "11元大额红包，可叠加使用！",
+          "description": "30减15、40减20半价券，不限量！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/i3nNWMUz",
+          "url": "http://dpurl.cn/vfKtk4ez",
           "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-2",
-          "title": "周三外卖节",
-          "description": "每周三领，9-13元红包！",
+          "title": "美团外卖红包3",
+          "description": "11元大额红包，可叠加使用！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/6Lx24cgz",
+          "url": "http://dpurl.cn/i3nNWMUz",
           "icon": "meituan/meituan.png"
         },       
         {

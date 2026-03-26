@@ -144,3 +144,82 @@ git submodule update --remote themes/PaperMod
 - 触摸友好的交互元素
 
 # 所有交互回答都使用中文
+
+---
+
+# 文章写作规范（SEO 内容文章）
+
+## 网站定位
+
+shenquanquan.com 是外卖优惠券引流站，推广美团外卖、饿了么等平台优惠券。
+核心目标：让用户看完文章后，点击领券按钮或扫码关注公众号「外卖神券探探」。
+
+## Front Matter 格式
+
+```yaml
+---
+title: "文章标题"
+date: YYYY-MM-DDT00:00:00+08:00
+summary: "一句话摘要，50字以内，说清楚文章解决什么问题。"
+tags: ["美团外卖", "相关标签"]
+categories: ["省钱攻略"]   # 或 "平台对比" / "新人指南"
+slug: "pinyin-slug-yong-lian-zi-fu"
+draft: false
+---
+```
+
+**日期规则**：统一用 `T00:00:00+08:00`，不要用 `T10:00:00+08:00`，避免与 GitHub Actions cron 时间冲突。
+
+## 写作原则
+
+- **够用就行**：把要说的事说清楚、说准确，不堆字
+- **逻辑清晰**：每个 `##` 小节只讲一件事，读者能跳着看
+- **信息准确**：金额、活动规则、操作步骤要准确；活动会变化的注明「以当期活动为准」
+- **口语化**：说人话，不用营销腔
+
+## 内部链接
+
+提到站内已有文章话题时，加上内部链接：
+
+```markdown
+[文章标题](/posts/slug/)
+```
+
+已有文章：
+- [美团外卖神券怎么领](/posts/meituan-shenquan-lingqu-gonglue/)
+- [美团外卖30元无门槛券怎么领](/posts/meituan-30yuan-wumenkan-coupon/)
+- [美团优惠券叠加使用教程](/posts/meituan-coupon-diejia-gonglue/)
+- [专门发美团优惠券的公众号推荐](/posts/meituan-coupon-gongzhonghao-tuijian/)
+- [美团优惠券膨胀技巧详解](/posts/meituan-coupon-pengzhang-jiqiao/)
+- [美团外卖和饿了么哪个便宜](/posts/meituan-vs-eleme-bijiao/)
+- [新用户首单攻略](/posts/meituan-xinyonghu-shodan-gonglue/)
+
+每写一篇新文章后，在这里追加一条。
+
+## 结尾固定模块（每篇必须有）
+
+```markdown
+---
+
+<div style="text-align:center; margin: 2rem 0;">
+  <a href="/coupons/" style="display:inline-block; padding:14px 36px; background:linear-gradient(135deg,#FF8C00,#FFA500); color:white; text-decoration:none; border-radius:10px; font-size:1.1rem; font-weight:bold; box-shadow:0 4px 15px rgba(255,140,0,0.35);">
+    🧧 点这里领今日神券 →
+  </a>
+</div>
+
+---
+
+## 关注公众号，第一时间获取优惠
+
+<div style="text-align:center; margin: 1.5rem 0;">
+  <img src="/images/wechat-qrcode.jpg" alt="外卖神券探探公众号二维码" style="width:180px; height:180px; border-radius:8px; display:block; margin:0 auto;">
+  <p style="color:#888; font-size:0.9rem; margin-top:0.5rem;">微信扫码关注「外卖神券探探」</p>
+</div>
+```
+
+按钮文案可根据文章主题微调，如「领新人专属神券」「领今日大额券」等。
+
+## slug 命名规则
+
+全小写拼音，单词间用 `-` 连接，体现核心关键词，4-6个词为宜。
+示例：`meituan-30yuan-wumenkan-coupon`、`eleme-xinyonghu-gonglue`

@@ -223,3 +223,34 @@ draft: false
 
 全小写拼音，单词间用 `-` 连接，体现核心关键词，4-6个词为宜。
 示例：`meituan-30yuan-wumenkan-coupon`、`eleme-xinyonghu-gonglue`
+
+---
+
+# 知识库系统
+
+## 位置
+
+`.claude/knowledge/` — 写文章前必须先读相关文件。
+
+- 索引：[`.claude/knowledge/README.md`](.claude/knowledge/README.md)（所有文件一览）
+- 规范：[`.claude/knowledge/STANDARD.md`](.claude/knowledge/STANDARD.md)（文件格式与采集标准）
+
+## 目前覆盖范围
+
+| 平台 | 官方规则 | 知乎洞察 |
+|------|---------|---------|
+| 美团外卖 | ✅ | ✅ 8个文件 |
+| 饿了么 / 淘宝闪购 | ✅ | ✅ 2个文件 |
+| 京东外卖 | ✅ | 待建 |
+| 跨平台对比 | — | ✅ 2个文件 |
+
+## 写文章时的使用流程
+
+1. 确定文章主题和涉及平台
+2. 先读对应平台的 `official.md`（保证规则准确）
+3. 再读相关主题的 `insights/` 文件（获取深度角度和用户视角）
+4. `official.md` 的内容保证事实准确性，`insights/` 提供写作角度
+
+## 扩充知识库
+
+新增文件后，必须在 `README.md` 的索引表里追加一行，格式见 `STANDARD.md` 第五节。

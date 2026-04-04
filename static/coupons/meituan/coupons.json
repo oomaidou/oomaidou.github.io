@@ -41,16 +41,7 @@
           "action": "立即领取",
           "url": "http://dpurl.cn/watoqesz",
           "icon": "meituan/meituan.png"
-        },
-        {
-          "id": "meituan-3",
-          "title": "美团-拼好饭红包",
-          "description": "大牌6.9起，免配送免打包",
-          "type": "copy",
-          "action": "一键复制",
-          "content": "1 %复制信息#% 打开团App http:/¥e5MDU5Y2JmMzU¥一起领",
-          "icon": "meituan/shenquan.png"
-        },
+        },        
         {
           "id": "meituan-4",
           "title": "18日神券节",
@@ -84,7 +75,7 @@
           "description": "每月3张5元神券包",
           "type": "copy",
           "action": "一键复制",
-          "content": "1 %复制信息#% 打开团App http:/¥znYjIwOTI4YmM¥一起领",
+          "content": "1 %复制信息#% 打开团App http:/¥nfZDJiZjhhZTM¥一起领",
           "icon": "meituan/shenquan.png"
         },
         {
@@ -129,7 +120,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/o0sapDhjeiTmXbu",
+          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/2oLUWaKNbrCzGlj",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },

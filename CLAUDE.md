@@ -194,6 +194,7 @@ draft: false
 - [美团外卖和饿了么哪个便宜](/posts/meituan-vs-eleme-bijiao/)
 - [新用户首单攻略](/posts/meituan-xinyonghu-shodan-gonglue/)
 - [京东外卖29减25优惠券怎么抢](/posts/jd-waimai-29-25-coupon-qiangjuan/)
+- [饿了么变成淘宝闪购了？账号、超吃卡、优惠券怎么用](/posts/eleme-bianchen-taobao-shanggou/)
 
 每写一篇新文章后，在这里追加一条。
 

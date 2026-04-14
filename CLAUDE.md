@@ -195,6 +195,9 @@ draft: false
 - [新用户首单攻略](/posts/meituan-xinyonghu-shodan-gonglue/)
 - [京东外卖29减25优惠券怎么抢](/posts/jd-waimai-29-25-coupon-qiangjuan/)
 - [饿了么变成淘宝闪购了？账号、超吃卡、优惠券怎么用](/posts/eleme-bianchen-taobao-shanggou/)
+- [京东外卖超级月卡值得开吗？1.68元能省多少](/posts/jd-waimai-super-yueka/)
+- [淘宝闪购超级吃货卡值不值得开？3.6元能省多少](/posts/taobao-flash-super-chika-card/)
+- [美团外卖神券包4.9元值不值买？12张5元无门槛券](/posts/meituan-shenquanbao-zhide-mai/)
 
 每写一篇新文章后，在这里追加一条。
 

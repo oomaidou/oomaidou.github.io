@@ -198,6 +198,7 @@ draft: false
 - [京东外卖超级月卡值得开吗？1.68元能省多少](/posts/jd-waimai-super-yueka/)
 - [淘宝闪购超级吃货卡值不值得开？3.6元能省多少](/posts/taobao-flash-super-chika-card/)
 - [美团外卖神券包4.9元值不值买？12张5元无门槛券](/posts/meituan-shenquanbao-zhide-mai/)
+- [京东418超级外卖日：今晚20点开抢，大牌1分钱+月卡1.68元](/posts/jd-418-super-waimai-day/)
 
 每写一篇新文章后，在这里追加一条。
 

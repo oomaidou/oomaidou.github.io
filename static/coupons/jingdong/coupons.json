@@ -15,14 +15,14 @@
           "url": "https://kzurl09.cn/t0GILY",
           "icon": "jingdong/jd.png"
         },
-        {
-          "id": "jd-2",
-          "title": "京东国贴专区",
-          "description": "京东国补，速来领取！",
+       {
+          "id": "jd-5",
+          "title": "京东外卖418超级外卖日",
+          "description": "四大福利1分吃",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/AOiVY2W",
-          "icon": "jingdong/jdgb.png"
+          "url": "hhttps://kzurl09.cn/t0GILY",
+          "icon": "jingdong/jdbt.png"
         },
         {
           "id": "jd-3",
@@ -42,15 +42,15 @@
           "url": "https://u.jd.com/lr1x0e7",
           "icon": "jingdong/jdbt.png"
         },
-        {
-          "id": "jd-5",
-          "title": "京东限时优惠券",
-          "description": "限时30元优惠券",
+         {
+          "id": "jd-2",
+          "title": "京东国贴专区",
+          "description": "京东国补，速来领取！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/lagtg2m",
-          "icon": "jingdong/jdbt.png"
-        },
+          "url": "https://u.jd.com/AOiVY2W",
+          "icon": "jingdong/jdgb.png"
+        },        
         {
           "id": "jd-6",
           "title": "京东特价专区",

@@ -199,6 +199,7 @@ draft: false
 - [淘宝闪购超级吃货卡值不值得开？3.6元能省多少](/posts/taobao-flash-super-chika-card/)
 - [美团外卖神券包4.9元值不值买？12张5元无门槛券](/posts/meituan-shenquanbao-zhide-mai/)
 - [京东418超级外卖日：今晚20点开抢，大牌1分钱+月卡1.68元](/posts/jd-418-super-waimai-day/)
+- [美团外卖红包在哪里领？2026年5个真实入口整理好了](/posts/meituan-waimai-hongbao-zai-na-ling/)
 
 每写一篇新文章后，在这里追加一条。
 
@@ -252,11 +253,55 @@ draft: false
 
 ## 写文章时的使用流程
 
+**第0步（必须）：选题查重**
+写任何新文章前，先做内容查重，避免重复覆盖已有角度：
+1. 读 `.claude/platforms/zhihu/published.md` — 查看已发布的知乎文章和回答
+2. 看 CLAUDE.md「内部链接」章节的已有文章列表 — 确认 Hugo 文章现有覆盖
+3. 确认新文章与已有内容的**关键词**或**用户意图**有明显差异，再开始写
+
+**第1-6步：内容准备与审校**
 1. 确定文章主题和涉及平台
 2. 先读对应平台的 `official.md`（保证规则准确）
 3. 再读相关主题的 `insights/` 文件（获取深度角度和用户视角）
 4. `official.md` 的内容保证事实准确性，`insights/` 提供写作角度
+5. **查图片素材**：读 `.claude/image-assets.md`，找与文章主题相关的图片；有相关图就在正文对应位置插入 `![描述](/images/<平台>/<文件名>)`；没有合适图片时告知用户
+6. **文章草稿完成后，发布前必须用 `proofreading` skill 做一遍审校**，去除 AI 腔，确认数字准确，再交用户确认
 
 ## 扩充知识库
 
 新增文件后，必须在 `README.md` 的索引表里追加一行，格式见 `STANDARD.md` 第五节。
+
+---
+
+# 内容获取工具优先级
+
+读取外部内容时，**按以下优先级选工具**，不要默认使用 Playwright MCP 或 WebFetch。
+
+## 知乎文章（zhuanlan.zhihu.com/p/...）
+
+**优先用 fetch-article CLI（已验证有效）：**
+```bash
+cd .claude/skills/zhihu-skills && source .venv/bin/activate
+python scripts/cli.py fetch-article --article-id {文章ID} --output-dir /tmp/zhihu_articles/
+```
+文章 ID 是 URL 中 `/p/` 后面的数字。
+
+## 知乎问题和回答（zhihu.com/question/...）
+
+**优先用 fetch-answers 或 question-detail CLI：**
+```bash
+cd .claude/skills/zhihu-skills && source .venv/bin/activate
+python scripts/cli.py fetch-answers --question-id {问题ID} --output-dir /tmp/zhihu_answers/
+python scripts/cli.py question-detail --question-id {问题ID}
+```
+
+## 微信公众号文章（mp.weixin.qq.com）
+
+**优先用 wechat-reader skill（已验证有效）：**
+```bash
+wechat-article-to-markdown "https://mp.weixin.qq.com/s/..." --output /tmp/wechat_article/
+```
+
+## 降级规则
+
+只有当以上专用工具**明确失败**时，才降级到 Playwright MCP 或 WebFetch。不允许跳过专用工具直接用通用工具。

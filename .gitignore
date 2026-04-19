@@ -55,3 +55,9 @@ yarn-error.log*
 
 # 知乎运营内部数据（不上传）
 .claude/
+
+# Playwright MCP 抓取缓存
+.playwright-mcp/
+
+# 闲鱼系统（不上传 GitHub）
+xianyu/

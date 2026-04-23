@@ -204,6 +204,7 @@ draft: false
 - [京东418超级外卖日：今晚20点开抢，大牌1分钱+月卡1.68元](/posts/jd-418-super-waimai-day/)
 - [美团外卖红包在哪里领？2026年5个真实入口整理好了](/posts/meituan-waimai-hongbao-zai-na-ling/)
 - [京东外卖怎么省钱？2026年完整攻略，叠加用每单少付5-15元](/posts/jd-waimai-shengqian-gonglue/)
+- [淘宝闪购怎么省钱？2026年最新攻略，四层叠加每单省10-20元](/posts/taobao-flash-shengqian-gonglue/)
 
 每写一篇新文章后，在这里追加一条。
 

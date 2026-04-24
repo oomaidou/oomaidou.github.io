@@ -205,6 +205,8 @@ draft: false
 - [美团外卖红包在哪里领？2026年5个真实入口整理好了](/posts/meituan-waimai-hongbao-zai-na-ling/)
 - [京东外卖怎么省钱？2026年完整攻略，叠加用每单少付5-15元](/posts/jd-waimai-shengqian-gonglue/)
 - [淘宝闪购怎么省钱？2026年最新攻略，四层叠加每单省10-20元](/posts/taobao-flash-shengqian-gonglue/)
+- [美团、淘宝闪购、京东外卖，哪个更便宜？三平台实测](/posts/meituan-taobao-flash-jd-bijiao/)
+- [用外卖优惠券，商家会亏本吗？三种券的钱谁出的](/posts/waimai-youhuiquan-shui-chengdan/)
 
 每写一篇新文章后，在这里追加一条。
 

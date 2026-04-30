@@ -208,6 +208,7 @@ draft: false
 - [美团、淘宝闪购、京东外卖，哪个更便宜？三平台实测](/posts/meituan-taobao-flash-jd-bijiao/)
 - [用外卖优惠券，商家会亏本吗？三种券的钱谁出的](/posts/waimai-youhuiquan-shui-chengdan/)
 - [美团、淘宝闪购、京东外卖新用户首单对比：哪家门槛最低？](/posts/sanzhangtai-xinyonghu-shodan-gonglue/)
+- [外卖大战补贴还能撑多久？三平台背后的逻辑，和现在该怎么用](/posts/waimai-dazhan-butie-duojiu/)
 
 每写一篇新文章后，在这里追加一条。
 

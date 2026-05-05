@@ -209,6 +209,16 @@ draft: false
 - [用外卖优惠券，商家会亏本吗？三种券的钱谁出的](/posts/waimai-youhuiquan-shui-chengdan/)
 - [美团、淘宝闪购、京东外卖新用户首单对比：哪家门槛最低？](/posts/sanzhangtai-xinyonghu-shodan-gonglue/)
 - [外卖大战补贴还能撑多久？三平台背后的逻辑，和现在该怎么用](/posts/waimai-dazhan-butie-duojiu/)
+- [美团神券包和淘宝闪购超吃卡哪个更划算？2026年详细对比](/posts/meituan-shenquanbao-vs-chaochika/)
+- [做美团外卖的商家实际能赚多少钱？抽成、神券、配送费全算一遍](/posts/meituan-shangjia-lirun-duoshao/)
+- [为什么每个人的美团外卖津贴金额不一样？千人千面机制说清楚了](/posts/meituan-jintie-jinei-butong-yuanyin/)
+- [88VIP值得开通吗？日常点外卖用超吃卡比它划算](/posts/88vip-zhide-kaito-ma/)
+- [淘宝闪购（饿了么）红包怎么天天领？三个免费入口整理好了](/posts/taobao-flash-hongbao-meitian-ling/)
+- [淘宝闪购的红包是平台出还是商家出？](/posts/taobao-flash-hongbao-shui-chengdan/)
+- [京东外卖超时20分钟免单是真的吗？怎么申请，实际怎么触发](/posts/jd-waimai-chaoshi-miendan-shenqing/)
+- [京东外卖补贴变少了还值得点吗？现在怎么用最划算](/posts/jd-waimai-butie-jianshao-haizhi-dian/)
+- [美团外卖会被淘宝闪购打败吗？这场仗没那么简单](/posts/meituan-vs-taobao-flash-shei-ying/)
+- [外卖大战特价商品为什么都是奶茶？平台和品牌各有打算](/posts/waimai-dazhan-nacha-weihe-teshu/)
 
 每写一篇新文章后，在这里追加一条。
 

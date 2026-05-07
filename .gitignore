@@ -60,4 +60,6 @@ yarn-error.log*
 .playwright-mcp/
 
 # 闲鱼系统（不上传 GitHub）
-xianyu/
+.claude/skills/xianyu-publish/data/
+.claude/skills/xianyu-publish/.env
+.claude/skills/xianyu-publish/__pycache__/

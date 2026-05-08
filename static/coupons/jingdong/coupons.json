@@ -8,8 +8,8 @@
       "coupons": [
         {
           "id": "jd-1",
-          "title": "京东外卖红包",
-          "description": "12元红包！每天可领！",
+          "title": "京东外卖惊喜红包",
+          "description": "大额半价叠加券，不限量",
           "type": "link",
           "action": "立即领取",
           "url": "https://kzurl09.cn/t0GILY",
@@ -17,16 +17,34 @@
         },
        {
           "id": "jd-5",
-          "title": "京东外卖418超级外卖日",
-          "description": "四大福利1分吃",
+          "title": "京东外卖常规红包",
+          "description": "12元红包！每天可领！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://kzurl09.cn/t0GILY",
-          "icon": "jingdong/jdbt.png"
+          "url": "https://u.jd.com/f1kmd4z",
+          "icon": "jingdong/jd.png"
+        },
+        {
+          "id": "jd-7",
+          "title": "京东外卖-百亿补贴券",
+          "description": "20元京东外卖百亿补贴券",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/f1xTjFg",
+          "icon": "jingdong/jd.png"
+        },
+        {
+          "id": "jd-6",
+          "title": "京东外卖-麦当劳优惠券",
+          "description": "麦当劳最高满50-30！免运费！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/fGxpyOt",
+          "icon": "jingdong/jd.png"
         },
         {
           "id": "jd-3",
-          "title": "京享红包",
+          "title": "京东618红包",
           "description": "无门槛红包最高26999",
           "type": "link",
           "action": "立即领取",
@@ -35,11 +53,11 @@
         },
         {
           "id": "jd-4",
-          "title": "京东隐藏优惠券",
-          "description": "专属隐藏优惠券",
+          "title": "京东百亿超市优惠券",
+          "description": "京东超市专属隐藏优惠券",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/lr1x0e7",
+          "url": "https://u.jd.com/fa432tG",
           "icon": "jingdong/jdbt.png"
         },
          {
@@ -48,18 +66,9 @@
           "description": "京东国补，速来领取！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/AOiVY2W",
+          "url": "https://u.jd.com/fD4LnAt",
           "icon": "jingdong/jdgb.png"
-        },        
-        {
-          "id": "jd-6",
-          "title": "京东特价专区",
-          "description": "天天特价 低至0.99",
-          "type": "link",
-          "action": "立即领取",
-          "url": "https://u.jd.com/lg195tF",
-          "icon": "jingdong/jdbt.png"
-        }
+        }        
       ]
     }
   ]

@@ -42,6 +42,15 @@
           "action": "立即领取",
           "url": "https://qf.jfshou.cn/unions//link/xLi17qM0Idmwo7Z8hsADDpJwCba3Iy",
           "icon": "shenghuo/kuaidi.png"
+        },
+        {
+          "id": "kuaidi-1",
+          "title": "顺丰优惠券",
+          "description": "最新活动，每月更新！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://www.shenquanquan.com/posts/shunfeng-kuaidi-202605-youhuiquan/",
+          "icon": "shenghuo/shunfeng.png"
         }
       ]
     },

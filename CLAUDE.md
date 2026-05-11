@@ -220,6 +220,7 @@ draft: false
 - [京东外卖补贴变少了还值得点吗？现在怎么用最划算](/posts/jd-waimai-butie-jianshao-haizhi-dian/)
 - [美团外卖会被淘宝闪购打败吗？这场仗没那么简单](/posts/meituan-vs-taobao-flash-shei-ying/)
 - [外卖大战特价商品为什么都是奶茶？平台和品牌各有打算](/posts/waimai-dazhan-nacha-weihe-teshu/)
+- [顺丰快递2026年5月优惠券集合：3元无门槛+8折寄件券免费领](/posts/shunfeng-kuaidi-202605-youhuiquan/)
 
 每写一篇新文章后，在这里追加一条。
 

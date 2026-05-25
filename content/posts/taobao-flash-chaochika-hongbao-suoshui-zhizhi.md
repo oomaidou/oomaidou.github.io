@@ -88,9 +88,9 @@ draft: false
 
 相关文章：
 
-[淘宝闪购超级吃货卡值不值得开？3.6元能省多少](/posts/taobao-flash-super-chika-card/)
-[美团神券包和淘宝闪购超吃卡哪个更划算？2026年详细对比](/posts/meituan-shenquanbao-vs-chaochika/)
-[美团神券包会自动续费扣款吗？怎么取消](/posts/meituan-shenquanbao-zidong-xufei-zenme-quxiao/)
+- [淘宝闪购超级吃货卡值不值得开？3.6元能省多少](/posts/taobao-flash-super-chika-card/)
+- [美团神券包和淘宝闪购超吃卡哪个更划算？2026年详细对比](/posts/meituan-shenquanbao-vs-chaochika/)
+- [美团神券包会自动续费扣款吗？怎么取消](/posts/meituan-shenquanbao-zidong-xufei-zenme-quxiao/)
 
 ---
 

@@ -53,9 +53,9 @@ draft: false
 
 相关文章：
 
-[京东外卖超时20分钟免单是真的吗？怎么申请，实际怎么触发](/posts/jd-waimai-chaoshi-miendan-shenqing/)
-[京东外卖超级月卡值得开吗？1.68元能省多少](/posts/jd-waimai-super-yueka/)
-[京东外卖怎么省钱？2026年完整攻略，叠加用每单少付5-15元](/posts/jd-waimai-shengqian-gonglue/)
+- [京东外卖超时20分钟免单是真的吗？怎么申请，实际怎么触发](/posts/jd-waimai-chaoshi-miendan-shenqing/)
+- [京东外卖超级月卡值得开吗？1.68元能省多少](/posts/jd-waimai-super-yueka/)
+- [京东外卖怎么省钱？2026年完整攻略，叠加用每单少付5-15元](/posts/jd-waimai-shengqian-gonglue/)
 
 ---
 

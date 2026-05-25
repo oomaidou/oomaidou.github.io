@@ -80,9 +80,9 @@ draft: false
 
 相关文章：
 
-[美团外卖和饿了么哪个便宜](/posts/meituan-vs-eleme-bijiao/)
-[美团、淘宝闪购、京东外卖，哪个更便宜？三平台实测](/posts/meituan-taobao-flash-jd-bijiao/)
-[外卖大战补贴还能撑多久？三平台背后的逻辑，和现在该怎么用](/posts/waimai-dazhan-butie-duojiu/)
+- [美团外卖和饿了么哪个便宜](/posts/meituan-vs-eleme-bijiao/)
+- [美团、淘宝闪购、京东外卖，哪个更便宜？三平台实测](/posts/meituan-taobao-flash-jd-bijiao/)
+- [外卖大战补贴还能撑多久？三平台背后的逻辑，和现在该怎么用](/posts/waimai-dazhan-butie-duojiu/)
 
 ---
 

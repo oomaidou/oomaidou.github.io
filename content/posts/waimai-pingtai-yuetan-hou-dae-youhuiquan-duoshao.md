@@ -73,9 +73,9 @@ draft: false
 
 相关文章：
 
-[美团外卖神券怎么领](/posts/meituan-shenquan-lingqu-gonglue/)
-[外卖大战补贴还能撑多久？三平台背后的逻辑，和现在该怎么用](/posts/waimai-dazhan-butie-duojiu/)
-[外卖优惠券突然没了怎么办？几个常见原因和解决方法](/posts/waimai-youhuiquan-turan-meile-zenme-ban/)
+- [美团外卖神券怎么领](/posts/meituan-shenquan-lingqu-gonglue/)
+- [外卖大战补贴还能撑多久？三平台背后的逻辑，和现在该怎么用](/posts/waimai-dazhan-butie-duojiu/)
+- [外卖优惠券突然没了怎么办？几个常见原因和解决方法](/posts/waimai-youhuiquan-turan-meile-zenme-ban/)
 
 ---
 

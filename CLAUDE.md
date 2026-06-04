@@ -242,6 +242,16 @@ draft: false
 - [外卖平台被约谈后，大额优惠券还有多少？现在怎么领](/posts/waimai-pingtai-yuetan-hou-dae-youhuiquan-duoshao/)
 - [淘宝闪购份额追平美团45%，用户现在该怎么选](/posts/taobao-flash-fenxiang-zhuiping-meituan-yonghu-zenme-xuan/)
 - [美团神券包会自动续费扣款吗？怎么取消](/posts/meituan-shenquanbao-zidong-xufei-zenme-quxiao/)
+- [外卖平台打电话/发短信送大额券包，是真的还是骗局？](/posts/waimai-dianhua-song-dae-quan-zhen-jia-bian/)
+- [淘宝闪购超吃卡三档怎么选？3.6元、3.9元、0.1元各适合哪种人](/posts/taobao-flash-chaochika-sandan-nage-huasuan/)
+- [美团外卖神会员值不值得升？和普通会员有什么区别](/posts/meituan-shenhuiyuan-zhide-shengji-ma/)
+- [京东外卖优惠券领不到、总显示抢完，是被限制了吗？怎么解决](/posts/jd-waimai-youhuiquan-ling-bu-dao-yuanyin/)
+- [美团外卖发免费咖啡茶饮券是什么活动？怎么领，以后还有吗](/posts/meituan-mianfei-chayinquan-zenme-ling/)
+- [美团外卖神券最近变少了是什么原因？2026年还能领到大额券吗](/posts/meituan-shenjuan-jianshao-yuanyin-zenme-ban/)
+- [美团外卖用了优惠券退款，钱能全退吗？不同情况说清楚](/posts/meituan-youhuiquan-tuikuan-neng-quan-tui-ma/)
+- [京东外卖打了一年价格战，2026年现在战绩怎样？还值得用吗](/posts/jd-waimai-dazhan-yinian-xianzhuang-2026/)
+- [哪些公众号可以领淘宝闪购（饿了么）优惠券？靠谱渠道整理](/posts/taobao-flash-youhuiquan-gongzhonghao-kaopu/)
+- [外卖点餐的5个信息差，大多数人不知道的省钱技巧](/posts/waimai-diancan-xinxicha-shengqian-jiqiao/)
 
 每写一篇新文章后，在这里追加一条。
 
@@ -286,12 +296,15 @@ draft: false
 
 ## 目前覆盖范围
 
-| 平台 | 官方规则 | 知乎洞察 |
-|------|---------|---------|
-| 美团外卖 | ✅ | ✅ 8个文件 |
-| 饿了么 / 淘宝闪购 | ✅ | ✅ 2个文件 |
-| 京东外卖 | ✅ | 待建 |
-| 跨平台对比 | — | ✅ 2个文件 |
+| 平台 | 官方规则 | 知乎洞察 | 微信公众号（商家运营） |
+|------|---------|---------|---------------------|
+| 美团外卖 | ✅ | ✅ 8个文件 | ✅ 3个文件（津贴联盟、神枪手、到账率） |
+| 饿了么 / 淘宝闪购 | ✅ | ✅ 8个文件 | ✅ 1个文件（淘宝闪购专项） |
+| 京东外卖 | ✅ | ✅ 5个文件 | — |
+| 跨平台对比 | — | ✅ 4个文件 | ✅ 1个文件（平台费率抽佣） |
+| 微信搜索索引 | — | — | ✅ 张大爷833篇文章标题+摘要（按需搜索） |
+
+**微信公众号来源**：张大爷聊外卖（2024-2026年，商家运营视角），文件位于各平台 `insights/` 目录下，命名以 `merchant-ops-` 开头。搜索索引位于 `_raw/wechat/张大爷搜索索引.md`。
 
 ## 写文章时的使用流程
 

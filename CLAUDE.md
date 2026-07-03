@@ -272,6 +272,18 @@ draft: false
 - [节假日送鲜花怎么省钱？美团闪购鲜花券怎么用](/posts/meituan-flash-xianhua-peisong-youhui/)
 - [滴滴、花小猪打车优惠券怎么领？出行省钱攻略](/posts/didi-dache-youhuiquan-zenme-ling-shengqian/)
 - [美团机票火车票红包怎么领？和携程比哪个更便宜](/posts/meituan-jipiao-huochepiao-hongbao-zenme-ling/)
+- [淘宝闪购超吃卡会员制度好不好？优缺点客观说清楚](/posts/taobao-flash-chaochika-huiyuan-youquedian/)
+- [新手机号或新账号能享受哪些外卖平台新人优惠？三平台攻略](/posts/waimai-xinren-xin-shouji-hao-youhui-daquan/)
+- [有陌生人拿我手机号点了外卖，这种情况怎么处理](/posts/moren-tian-wo-shoujihao-dian-waimai-zenme-ban/)
+- [美团点麦当劳/肯德基/星巴克有什么优惠？大牌点餐怎么省钱](/posts/meituan-maidanglao-kfc-xingbake-youhui-zenme-ling/)
+- [美团买水果怎么省钱？神券满99减30和满69减25怎么用](/posts/meituan-shuiguo-shenquan-zenme-yong/)
+- [淘宝闪购（饿了么）新用户首单为什么用不了？原因和解决方法](/posts/taobao-flash-xinyonghu-shodan-youhui-yongle/)
+- [饿了么改名淘宝闪购后平台"没落"了吗？2026年真实状态](/posts/eleme-taobao-flash-gaiming-hou-zhuangtai-2026/)
+- [外卖大战打了两年，2026年下半年用户该怎么选平台](/posts/waimai-dazhan-liangnianhuo-yonghu-ruhe-xuan/)
+- [美团洗衣保洁9.9元起是真的吗？衣物送洗最省怎么做](/posts/meituan-xiyi-baojie-9yuan-shi-zhen-de/)
+- [京东美团这场外卖之争争的是什么？用户该怎么利用](/posts/jd-meituan-waimai-zhi-zheng-yonghu-ruhe-li/)
+- [美团电影票怎么买最省？和猫眼、淘票票比哪个便宜](/posts/meituan-dianying-piao-zenme-mai-pian/)
+- [买了团购/优惠券到店消费，商家不肯核销怎么办](/posts/tuangou-youhuiquan-shangjia-bu-ken-hexiao-zenme-ban/)
 
 每写一篇新文章后，在这里追加一条。
 

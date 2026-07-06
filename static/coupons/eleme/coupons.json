@@ -12,7 +12,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥DMfIgbSeNgt￥/ HU7405",
+          "content": "￥i9K3gmB0ir4￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -21,7 +21,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥WSRQgbS34QS￥/ HU7405",
+          "content": "￥2oNSgmBbWsR￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -30,7 +30,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥Xz8rgbS3uvP￥/ HU7405",
+          "content": "￥mpdVgmBcVJ8￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -39,7 +39,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥ahY0gbSewhZ￥/ HU7405",
+          "content": "￥bf56gmBXlku￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -48,7 +48,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥1RTQgbS3LA1￥/ HU7405",
+          "content": "￥pc5igmBW6DA￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -57,7 +57,7 @@
           "description": "爆品低至5折。复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥1IvFgbSeO1I￥/ HU7405",
+          "content": "￥7llvgmBWI8O￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -66,7 +66,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥6lzWgbSVWnp￥/ HU7405",
+          "content": "￥0ygOgmB3qQJ￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -75,7 +75,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥03jcgbSVXfT￥/ HU7405",
+          "content": "￥dpSngmB41sQ￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -84,7 +84,43 @@
           "description": "每晚8点抢免单红包。复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥rP3rgbSVIri￥/ HU7405",
+          "content": "￥KpBigmBf31S￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-18",
+          "title": "淘宝闪购冰爽水饮节",
+          "description": "复制后，去淘宝app领专属红包福利。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥JlobgmBK337￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-19",
+          "title": "淘宝闪购--咖啡专场",
+          "description": "大咖美式外卖不只2折！复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥WrpmgmBvJrZ￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-20",
+          "title": "淘宝闪购-汉堡专场",
+          "description": "大牌汉堡不只2折！复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥0kgSgmBEfTe￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-21",
+          "title": "淘宝闪购--披萨专场",
+          "description": "大牌比萨不只2折！复制后，去淘宝app领专属红包福利。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥iFDKgmBy27A￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -93,7 +129,7 @@
           "description": "复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "爆款单品好价:mp://9QsWdEx0atnNdGm",
+          "content": "爆款单品好价:mp://wxIDJNdW9x0huCd",
           "dataType": "wxapp"
         },
         {
@@ -111,7 +147,7 @@
           "description": "品牌活动聚合会场。复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "连锁大牌天天有:mp://kdzMAlwzizwxoyg",
+          "content": "连锁大牌天天有:mp://V11Id88lfDYaH0n",
           "dataType": "wxapp"
         },
         {
@@ -120,7 +156,7 @@
           "description": "地铁附近商圈、红包领不停",
           "type": "copy",
           "action": "一键复制",
-          "content": "饿了么地铁商圈红包:mp://5nK2oIU66D49C9y",
+          "content": "饿了么地铁商圈红包:mp://8UmG9hgdqC8InYe",
           "dataType": "wxapp"
         },
         {
@@ -129,7 +165,7 @@
           "description": "超市好价 即刻送达。复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥fS8JgbSfcT9￥/ HU7405",
+          "content": "￥kIo2gmBhnJh￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -138,7 +174,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥buEQgbSUVBZ￥/ HU7405",
+          "content": "￥ExPwgmB7ujs￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -147,7 +183,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥vWlUgbS4Rka￥/ HU7405",
+          "content": "￥1aCggmBi5RS￥/ HU7405",
           "icon": "eleme/shangou.png"
         },
         {
@@ -156,7 +192,7 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥rwQwgbSfe1J￥/ HU7405",
+          "content": "￥ogMNgmBi1Y6￥/ HU7405",
           "icon": "eleme/shangou.png"
         }
       ]

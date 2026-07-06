@@ -15,13 +15,13 @@
           "url": "https://kzurl09.cn/t0GILY",
           "icon": "jingdong/jd.png"
         },
-       {
+        {
           "id": "jd-5",
           "title": "京东外卖常规红包",
           "description": "12元红包！每天可领！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/f1kmd4z",
+          "url": "https://u.jd.com/XGcJMBs",
           "icon": "jingdong/jd.png"
         },
         {
@@ -30,7 +30,7 @@
           "description": "20元京东外卖百亿补贴券",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/f1xTjFg",
+          "url": "https://u.jd.com/XacE4uY",
           "icon": "jingdong/jd.png"
         },
         {
@@ -39,7 +39,7 @@
           "description": "麦当劳最高满50-30！免运费！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/fGxpyOt",
+          "url": "https://u.jd.com/XgcJMXj",
           "icon": "jingdong/jd.png"
         },
         {
@@ -48,7 +48,7 @@
           "description": "无门槛红包最高26999",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/lg1FCtV",
+          "url": "https://u.jd.com/X1cJtjs",
           "icon": "jingdong/jdbt.png"
         },
         {
@@ -57,7 +57,7 @@
           "description": "京东超市专属隐藏优惠券",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/fa432tG",
+          "url": "https://u.jd.com/XGcEeN1",
           "icon": "jingdong/jdbt.png"
         },
          {
@@ -66,7 +66,7 @@
           "description": "京东国补，速来领取！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/fD4LnAt",
+          "url": "https://u.jd.com/XGcEFjh",
           "icon": "jingdong/jdgb.png"
         }        
       ]

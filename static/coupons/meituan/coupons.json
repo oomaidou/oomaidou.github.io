@@ -75,7 +75,7 @@
           "description": "每月12张5元无门槛红包",
           "type": "copy",
           "action": "一键复制",
-          "content": "1 %复制信息#% 打开👉美团👈 http:/💰7lNzViZGM2OWQ💰 ",
+          "content": "1 %复制信息#% 打开👉美团👈 http:/💰tiNzNjOGRkNmY💰  ",
           "icon": "meituan/shenquan.png"
         },
         {
@@ -120,7 +120,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/LCnlhvTqzlIsMYk",
+          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/bk60Tyj8VAmex0d",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },

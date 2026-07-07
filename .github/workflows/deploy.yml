@@ -66,3 +66,70 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  baidu-push:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Push recent URLs to Baidu
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+        run: |
+          if [ -z "$BAIDU_PUSH_TOKEN" ]; then
+            echo "::notice::未配置 BAIDU_PUSH_TOKEN secret，跳过百度推送"
+            exit 0
+          fi
+
+          # 等待 GitHub Pages CDN 更新
+          sleep 30
+
+          curl -sS --retry 3 -o sitemap.xml "https://www.shenquanquan.com/sitemap.xml"
+
+          # 从 sitemap 提取近 2 天新增/更新的 URL（每次最多 20 条）
+          python3 <<'EOF'
+          import re
+          from datetime import datetime, timedelta, timezone
+
+          xml = open("sitemap.xml", encoding="utf-8").read()
+
+          entries = re.findall(
+              r"<url>\s*<loc>(.*?)</loc>\s*(?:<lastmod>(.*?)</lastmod>)?", xml
+          )
+          cutoff = (datetime.now(timezone(timedelta(hours=8))) - timedelta(days=2)).date()
+
+          urls = []
+          for loc, lastmod in entries:
+              if lastmod and datetime.fromisoformat(lastmod[:10]).date() >= cutoff:
+                  urls.append(loc)
+
+          # 推送配额有限，优先文章页，其次首页，最后标签/分类等聚合页
+          def priority(u):
+              if "/posts/" in u and not u.rstrip("/").endswith("posts"):
+                  return 0
+              if u.rstrip("/") == "https://www.shenquanquan.com":
+                  return 1
+              return 2
+
+          urls.sort(key=priority)
+
+          with open("urls.txt", "w") as f:
+              f.write("\n".join(urls[:20]))
+          print(f"sitemap 共 {len(entries)} 个页面，近 2 天更新 {len(urls)} 个")
+          EOF
+
+          if [ ! -s urls.txt ]; then
+            echo "近 2 天没有新增或更新的页面，跳过推送"
+            exit 0
+          fi
+
+          echo "推送以下 URL 到百度："
+          cat urls.txt
+          echo ""
+
+          curl -sS -H 'Content-Type:text/plain' --data-binary @urls.txt \
+            "http://data.zz.baidu.com/urls?site=https://www.shenquanquan.com&token=${BAIDU_PUSH_TOKEN}" \
+            | tee baidu-response.json
+          echo ""
+
+          # 响应含 success 字段即为成功；含 error 字段（如 token 无效、配额用完）则让任务失败以便察觉
+          grep -q '"success"' baidu-response.json

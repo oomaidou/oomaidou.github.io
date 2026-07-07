@@ -332,6 +332,15 @@ footer {
     display: none;
 }
 
+/* 空间充足时整组居中；溢出滚动时 auto margin 自动失效，退回左对齐 */
+.tab-link:first-child {
+    margin-left: auto;
+}
+
+.tab-link:last-child {
+    margin-right: auto;
+}
+
 .tab-link {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -432,6 +441,17 @@ footer {
 }
 
 @media (max-width: 600px) {
+    header h1 {
+        font-size: 1.35rem;
+        margin: 10px 12px 6px;
+    }
+    /* 标题后半句作为整体换行，避免折行拆词 */
+    header h1 .h1-seg {
+        display: inline-block;
+    }
+    header p {
+        font-size: 0.88rem;
+    }
     .tab-link {
         padding: 12px 11px;
     }
@@ -441,6 +461,29 @@ footer {
     .category-item img {
         width: 40px;
         height: 40px;
+    }
+    /* 站点介绍区：手机端紧凑排版，2列宫格，隐藏描述行 */
+    .site-intro h2 {
+        font-size: 0.95rem;
+    }
+    .site-intro > p {
+        font-size: 0.8rem;
+    }
+    .site-intro-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .site-intro-item {
+        padding: 8px 10px;
+    }
+    .site-intro-item h3 {
+        font-size: 0.85rem;
+    }
+    .site-intro-item p {
+        display: none;
+    }
+    .site-intro-item a {
+        font-size: 0.72rem;
     }
     .card-content h2 {
         font-size: 14px;

@@ -67,25 +67,19 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  baidu-push:
+  search-push:
     runs-on: ubuntu-latest
     needs: deploy
     steps:
-      - name: Push recent URLs to Baidu
-        env:
-          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+      - name: Extract recently updated URLs from sitemap
         run: |
-          if [ -z "$BAIDU_PUSH_TOKEN" ]; then
-            echo "::notice::未配置 BAIDU_PUSH_TOKEN secret，跳过百度推送"
-            exit 0
-          fi
-
           # 等待 GitHub Pages CDN 更新
           sleep 30
 
           curl -sS --retry 3 -o sitemap.xml "https://www.shenquanquan.com/sitemap.xml"
 
-          # 从 sitemap 提取近 2 天新增/更新的 URL（每次最多 20 条）
+          # 从 sitemap 提取近 2 天新增/更新的 URL
+          # urls-baidu.txt：最多 20 条（百度配额小）；urls-all.txt：全量（IndexNow 无限制）
           python3 <<'EOF'
           import re
           from datetime import datetime, timedelta, timezone
@@ -102,7 +96,7 @@ jobs:
               if lastmod and datetime.fromisoformat(lastmod[:10]).date() >= cutoff:
                   urls.append(loc)
 
-          # 推送配额有限，优先文章页，其次首页，最后标签/分类等聚合页
+          # 百度推送配额有限，优先文章页，其次首页，最后标签/分类等聚合页
           def priority(u):
               if "/posts/" in u and not u.rstrip("/").endswith("posts"):
                   return 0
@@ -112,21 +106,32 @@ jobs:
 
           urls.sort(key=priority)
 
-          with open("urls.txt", "w") as f:
+          with open("urls-baidu.txt", "w") as f:
               f.write("\n".join(urls[:20]))
+          with open("urls-all.txt", "w") as f:
+              f.write("\n".join(urls))
           print(f"sitemap 共 {len(entries)} 个页面，近 2 天更新 {len(urls)} 个")
           EOF
 
-          if [ ! -s urls.txt ]; then
+      - name: Push to Baidu
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+        run: |
+          if [ -z "$BAIDU_PUSH_TOKEN" ]; then
+            echo "::notice::未配置 BAIDU_PUSH_TOKEN secret，跳过百度推送"
+            exit 0
+          fi
+
+          if [ ! -s urls-baidu.txt ]; then
             echo "近 2 天没有新增或更新的页面，跳过推送"
             exit 0
           fi
 
           echo "推送以下 URL 到百度："
-          cat urls.txt
+          cat urls-baidu.txt
           echo ""
 
-          curl -sS -H 'Content-Type:text/plain' --data-binary @urls.txt \
+          curl -sS -H 'Content-Type:text/plain' --data-binary @urls-baidu.txt \
             "http://data.zz.baidu.com/urls?site=https://www.shenquanquan.com&token=${BAIDU_PUSH_TOKEN}" \
             | tee baidu-response.json
           echo ""
@@ -139,3 +144,37 @@ jobs:
           else
             exit 1
           fi
+
+      - name: Push to IndexNow (Bing)
+        if: ${{ !cancelled() }}
+        run: |
+          if [ ! -s urls-all.txt ]; then
+            echo "近 2 天没有新增或更新的页面，跳过推送"
+            exit 0
+          fi
+
+          python3 <<'EOF'
+          import json
+
+          urls = [u.strip() for u in open("urls-all.txt", encoding="utf-8") if u.strip()]
+          payload = {
+              "host": "www.shenquanquan.com",
+              "key": "7e4fe8c7039e33b6a616abdc34f3f40e",
+              "keyLocation": "https://www.shenquanquan.com/7e4fe8c7039e33b6a616abdc34f3f40e.txt",
+              "urlList": urls
+          }
+          with open("indexnow.json", "w") as f:
+              json.dump(payload, f)
+          print(f"IndexNow 推送 {len(urls)} 条 URL")
+          EOF
+
+          HTTP_CODE=$(curl -sS -o indexnow-resp.txt -w "%{http_code}" \
+            -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data-binary @indexnow.json)
+          echo "IndexNow 响应码: $HTTP_CODE"
+          cat indexnow-resp.txt || true
+          echo ""
+
+          # 200/202 都表示接受成功
+          [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ]

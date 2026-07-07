@@ -131,5 +131,11 @@ jobs:
             | tee baidu-response.json
           echo ""
 
-          # 响应含 success 字段即为成功；含 error 字段（如 token 无效、配额用完）则让任务失败以便察觉
-          grep -q '"success"' baidu-response.json
+          # success = 推送成功；over quota = 当日配额用完（警告但不失败）；其他错误（如 token 无效）任务失败以便察觉
+          if grep -q '"success"' baidu-response.json; then
+            echo "推送成功"
+          elif grep -q 'over quota' baidu-response.json; then
+            echo "::warning::百度当日推送配额已用完，本次未推送"
+          else
+            exit 1
+          fi

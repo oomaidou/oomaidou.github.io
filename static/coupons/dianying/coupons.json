@@ -1,0 +1,21 @@
+{
+  "platform": "dianying",
+  "platformName": "电影票",
+  "icon": "dianying/movie.png",
+  "sections": [
+    {
+      "title": "电影票",
+      "coupons": [
+        {
+          "id": "movie-1",
+          "title": "电影票优惠",
+          "description": "看电影超省钱，全国通用",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/rkxPki6u3WbLVDTO4wPU3QgJNbhISd",
+          "icon": "dianying/movie.png"
+        }
+      ]
+    }
+  ]
+}

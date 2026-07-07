@@ -3,8 +3,37 @@
  * 兼容版本：支持微信浏览器和老版本浏览器
  */
 
-function CouponRenderer() {
-  this.platforms = ['meituan', 'eleme', 'jingdong', 'shuang11', 'shenghuo'];
+function CouponRenderer(platforms) {
+  // 平台/类目列表来自 platforms.json；未传入时回退到旧列表（独立页面兼容）
+  this.platforms = platforms || ['meituan', 'eleme', 'jingdong', 'shuang11', 'shenghuo'];
+}
+
+/**
+ * 根据 platforms.json 配置生成标签栏、金刚区和内容容器
+ * @param {Array} platforms - [{id, name, icon}, ...]
+ */
+function buildCouponNav(platforms) {
+  var tabsEl = document.getElementById('tabs');
+  var gridEl = document.getElementById('category-grid');
+  var mainEl = document.getElementById('main');
+  var tabsHtml = '';
+  var gridHtml = '';
+  var mainHtml = '';
+
+  for (var i = 0; i < platforms.length; i++) {
+    var p = platforms[i];
+    var active = i === 0 ? ' active' : '';
+    tabsHtml += '<div class="tab-link' + active + '" data-platform="' + p.id + '" onclick="selectPlatform(\'' + p.id + '\')">' +
+                '<span>' + p.name + '</span></div>';
+    gridHtml += '<a class="category-item" href="javascript:void(0)" onclick="selectPlatform(\'' + p.id + '\')">' +
+                '<img src="' + p.icon + '" alt="' + p.name + '优惠券">' +
+                '<span>' + p.name + '</span></a>';
+    mainHtml += '<div id="' + p.id + '" class="tab-content"' + (i === 0 ? ' style="display: block;"' : '') + '></div>';
+  }
+
+  if (tabsEl) tabsEl.innerHTML = tabsHtml;
+  if (gridEl) gridEl.innerHTML = gridHtml;
+  if (mainEl) mainEl.innerHTML = mainHtml;
 }
 
 /**
@@ -158,15 +187,36 @@ CouponRenderer.prototype.init = function() {
 };
 
 // 页面加载完成后初始化（仅在主页时）
-if (!window.couponRendererInitialized) {
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      var renderer = new CouponRenderer();
-      renderer.init();
+function initCouponPage() {
+  // 主页有 #tabs 容器：从 platforms.json 构建导航后渲染
+  if (document.getElementById('tabs')) {
+    fetch('platforms.json').then(function(response) {
+      return response.json();
+    }).then(function(config) {
+      buildCouponNav(config.platforms);
+      var ids = [];
+      for (var i = 0; i < config.platforms.length; i++) {
+        ids.push(config.platforms[i].id);
+      }
+      new CouponRenderer(ids).init();
+    }).catch(function(error) {
+      console.error('加载平台配置失败:', error);
+      var mainEl = document.getElementById('main');
+      if (mainEl) {
+        mainEl.innerHTML = '<div class="error-message">加载失败，请刷新重试</div>';
+      }
     });
   } else {
+    // 无 #tabs 的旧页面：按旧逻辑渲染
+    new CouponRenderer().init();
+  }
+}
+
+if (!window.couponRendererInitialized) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCouponPage);
+  } else {
     // DOM已经加载完成
-    var renderer = new CouponRenderer();
-    renderer.init();
+    initCouponPage();
   }
 }

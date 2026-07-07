@@ -23,10 +23,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 核心组件
 
-- `coupon-renderer.js`: 核心渲染引擎，加载JSON数据并生成HTML
-- `script.js`: UI交互处理（选项卡切换、剪贴板操作）
-- `index.html`: 主页面，包含所有平台的选项卡界面
-- 平台目录 (`meituan/`, `eleme/`, `jingdong/`, `shenghuo/`): 每个包含 `coupons.json` 和 `top.json`
+- `platforms.json`: 类目/平台配置，驱动主页的标签栏、金刚区和内容容器（新增类目只需改这里 + 建目录）
+- `coupon-renderer.js`: 核心渲染引擎，读取 `platforms.json` 生成导航，加载各类目JSON生成优惠券卡片
+- `script.js`: UI交互处理（选项卡切换 `selectPlatform`、剪贴板操作）
+- `index.html`: 主页面，仅含空容器（`#category-grid`、`#tabs`、`#main`），内容全部由JS生成
+- 类目目录 (`meituan/`, `eleme/`, `jingdong/`, `dapai/`, `dache/`, `kuaidi/`, `dianying/`, `shuang11/`): 每个包含 `coupons.json` 和图标
+
+### 添加新类目
+
+1. 新建目录（如 `jiudian/`），放入 `coupons.json`（结构见下）和图标 PNG
+2. 在 `platforms.json` 的 `platforms` 数组中追加一项：`{ "id": "jiudian", "name": "酒店", "icon": "jiudian/xxx.png" }`
+3. 刷新主页即可：标签栏、金刚区、内容区自动出现新类目
+
+注：`shenghuo/` 目录已不在主页展示（内容拆分为大牌点餐/打车/寄快递/电影票四个类目），保留是为了旧链接 `shenghuo/index.html` 可访问。
 
 ### 数据结构
 

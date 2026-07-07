@@ -1,4 +1,56 @@
-// 切换平台标签页的函数
+// 按类目 id 切换标签页（tab 和金刚区共用）
+function selectPlatform(platformId) {
+  try {
+    // 1. 隐藏所有标签内容
+    var tabContent = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+
+    // 2. 移除所有 tab 的激活状态，找到目标 tab
+    var tabLinks = document.getElementsByClassName("tab-link");
+    var activeTab = null;
+    for (var j = 0; j < tabLinks.length; j++) {
+      tabLinks[j].className = tabLinks[j].className.replace(" active", "");
+      if (tabLinks[j].getAttribute("data-platform") === platformId) {
+        activeTab = tabLinks[j];
+      }
+    }
+
+    // 3. 显示目标内容
+    var targetElement = document.getElementById(platformId);
+    if (targetElement) {
+      targetElement.style.display = "block";
+    }
+
+    // 4. 激活目标 tab，并把它横向滚动到可见位置
+    if (activeTab) {
+      activeTab.className += " active";
+      if (activeTab.scrollIntoView) {
+        try {
+          activeTab.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+        } catch (e) {}
+      }
+    }
+
+    // 5. 纵向滚动到 tab 栏位置（tab 栏吸顶，内容紧随其下）
+    var tabsEl = document.getElementById("tabs");
+    if (tabsEl && window.scrollTo) {
+      var y = tabsEl.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop || 0);
+      try {
+        window.scrollTo({ top: y, behavior: "auto" });
+      } catch (e) {
+        window.scrollTo(0, y);
+      }
+    }
+  } catch (error) {
+    console.error('切换平台时出错:', error);
+  }
+}
+
+window.selectPlatform = selectPlatform;
+
+// 切换平台标签页的函数（旧接口，独立页面兼容保留）
 function openPlatform(evt, platformName) {
   try {
     // 1. 获取所有的标签内容元素，并全部隐藏

@@ -1,0 +1,21 @@
+{
+  "platform": "dapai",
+  "platformName": "大牌点餐",
+  "icon": "dapai/food.png",
+  "sections": [
+    {
+      "title": "大牌点餐",
+      "coupons": [
+        {
+          "id": "food-1",
+          "title": "大牌点餐优惠",
+          "description": "麦当劳、肯德基、星巴克...",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/vKxnHPsJIm5zhmgO3RIKQuReoivdYQ",
+          "icon": "dapai/food.png"
+        }
+      ]
+    }
+  ]
+}

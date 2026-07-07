@@ -79,36 +79,13 @@
     
 
 
-    <div class="tabs">
-        <div class="tab-link active" onclick="openPlatform(event, 'meituan')">
-            <img src="meituan/meituan.png" alt="美团平台Logo" class="tab-icon">
-            <span>美团</span>
-        </div>
-        <div class="tab-link" onclick="openPlatform(event, 'eleme')">
-            <img src="eleme/eleme.png" alt="饿了么平台Logo" class="tab-icon">
-            <span>饿了么</span>
-        </div>
-        <div class="tab-link" onclick="openPlatform(event, 'jingdong')">
-            <img src="jingdong/jd.png" alt="京东平台Logo" class="tab-icon">
-            <span>京东</span>
-        </div>
-        <div class="tab-link" onclick="openPlatform(event, 'shuang11')">
-            <img src="shuang11/jd.png" alt="618活动Logo" class="tab-icon">
-            <span>618活动</span>
-        </div>
-        <div class="tab-link" onclick="openPlatform(event, 'shenghuo')">
-            <img src="shenghuo/shenghuo.png" alt="生活服务平台Logo" class="tab-icon">
-            <span>生活服务</span>
-        </div>
-    </div>
+    <!-- 金刚区：全部分类一览，由 platforms.json 生成 -->
+    <nav class="category-grid" id="category-grid" aria-label="优惠券分类"></nav>
 
-    <main>
-        <div id="meituan" class="tab-content" style="display: block;"></div>
-        <div id="eleme" class="tab-content"></div>
-        <div id="jingdong" class="tab-content"></div>
-        <div id="shuang11" class="tab-content"></div>
-        <div id="shenghuo" class="tab-content"></div>
-    </main>
+    <!-- 平台/类目标签栏，由 platforms.json 生成 -->
+    <div class="tabs" id="tabs"></div>
+
+    <main id="main"></main>
 
     <!-- 站点介绍区域 -->
     <section class="site-intro">

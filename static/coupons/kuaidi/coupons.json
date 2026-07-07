@@ -1,0 +1,30 @@
+{
+  "platform": "kuaidi",
+  "platformName": "寄快递",
+  "icon": "kuaidi/kuaidi.png",
+  "sections": [
+    {
+      "title": "寄快递",
+      "coupons": [
+        {
+          "id": "kuaidi-1",
+          "title": "特价寄快递",
+          "description": "全国上门取件，低至5元下单",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/xLi17qM0Idmwo7Z8hsADDpJwCba3Iy",
+          "icon": "kuaidi/kuaidi.png"
+        },
+        {
+          "id": "kuaidi-2",
+          "title": "顺丰优惠券",
+          "description": "最新活动，每月更新！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://www.shenquanquan.com/posts/shunfeng-kuaidi-202605-youhuiquan/",
+          "icon": "kuaidi/shunfeng.png"
+        }
+      ]
+    }
+  ]
+}

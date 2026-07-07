@@ -1,0 +1,39 @@
+{
+  "platform": "dache",
+  "platformName": "打车",
+  "icon": "dache/didi.png",
+  "sections": [
+    {
+      "title": "打车优惠",
+      "coupons": [
+        {
+          "id": "didi-1",
+          "title": "滴滴打车券",
+          "description": "出行大礼包,全员免费领",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://vv.didi.cn/305kJAl?source_id=OPEN_CPS_PLATFORM,224720269452&ref_from=dunion",
+          "icon": "dache/didi.png"
+        },
+        {
+          "id": "huaxiaozhu-1",
+          "title": "花小猪打车",
+          "description": "首单立减10元",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/GIvGlQrV133gbeT8JXYvbSWHMmVkPw",
+          "icon": "dache/huaxiaozhu.jpeg"
+        },
+        {
+          "id": "t3-1",
+          "title": "T3出行券",
+          "description": "超值券包天天领！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/1ZfmbPKbD70BsMpNMAeOuNx4R6xl6k",
+          "icon": "dache/t3.png"
+        }
+      ]
+    }
+  ]
+}

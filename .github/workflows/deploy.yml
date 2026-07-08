@@ -5,8 +5,9 @@ on:
     branches:
       - main
   workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * *'  # 每天北京时间 10:00（UTC+8 = UTC 02:00）自动构建
+  # 【备案审核期间临时停用定时构建，备案通过后取消注释恢复】
+  # schedule:
+  #   - cron: '0 2 * * *'  # 每天北京时间 10:00（UTC+8 = UTC 02:00）自动构建
 
 permissions:
   contents: read
@@ -42,10 +43,11 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          # 【备案审核期间临时使用 github.io，备案通过后改回 https://www.shenquanquan.com/】
           hugo \
             --gc \
             --minify \
-            --baseURL "https://www.shenquanquan.com/"
+            --baseURL "https://oomaidou.github.io/"
 
       - name: Setup Pages
         id: pages
@@ -68,6 +70,8 @@ jobs:
         uses: actions/deploy-pages@v4
 
   search-push:
+    # 【备案审核期间临时停用（主域名不可访问，不应推送），备案通过后删除下面这行恢复】
+    if: ${{ false }}
     runs-on: ubuntu-latest
     needs: deploy
     steps:

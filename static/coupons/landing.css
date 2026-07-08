@@ -1,0 +1,274 @@
+/* 品类落地页共用样式 */
+* { box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    margin: 0;
+    background: #f4f5f7;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+}
+
+a { text-decoration: none; }
+
+.page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* 顶部 */
+.hero {
+    background: #ff7300;
+    background: linear-gradient(120deg, #ff7300 0%, #ffb347 100%);
+    padding: 14px 16px 26px;
+    color: #fff;
+}
+
+.crumb {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 18px;
+}
+
+.crumb a {
+    color: rgba(255,255,255,0.85);
+}
+
+.crumb span { margin: 0 4px; }
+
+.hero-icon { font-size: 2.2rem; line-height: 1; }
+
+.hero h1 {
+    font-size: 1.45rem;
+    margin: 10px 0 6px;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.92);
+}
+
+/* 内容区块 */
+main { padding: 0 12px; }
+
+section { margin-top: 22px; }
+
+section > h2 {
+    font-size: 1.05rem;
+    color: #222;
+    margin: 0 0 12px;
+    padding-left: 10px;
+    border-left: 4px solid #ff7300;
+    line-height: 1.3;
+}
+
+.update-tag {
+    font-size: 0.75rem;
+    color: #999;
+    font-weight: normal;
+    margin-left: 6px;
+}
+
+/* 票券卡片 */
+.ticket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+.ticket:active { transform: scale(0.98); }
+
+.ticket-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    object-fit: contain;
+    background: #f8f8f8;
+}
+
+.ticket-info { flex: 1; min-width: 0; }
+
+.ticket-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.ticket-desc {
+    font-size: 0.82rem;
+    color: #999;
+}
+
+/* 虚线分隔 + 半圆豁口，做出票券感 */
+.ticket-cta {
+    flex-shrink: 0;
+    margin-left: 12px;
+    padding: 9px 0 9px 14px;
+    border-left: 1px dashed #e5e5e5;
+}
+
+.ticket::before,
+.ticket::after {
+    content: '';
+    position: absolute;
+    right: 86px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #f4f5f7;
+}
+
+.ticket::before { top: -7px; }
+.ticket::after { bottom: -7px; }
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #ff5f3c, #ff2442);
+    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(255,36,66,0.25);
+}
+
+/* 领取步骤 */
+.steps {
+    background: #fff;
+    border-radius: 12px;
+    padding: 4px 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0;
+}
+
+.step + .step { border-top: 1px solid #f5f5f5; }
+
+.step-num {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff1e6;
+    color: #ff7300;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+
+.step-text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: #444;
+}
+
+.step-text b { color: #222; }
+
+/* 常见问题 */
+.qa {
+    background: #fff;
+    border-radius: 12px;
+    padding: 13px 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.qa .q {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.qa .q::before {
+    content: 'Q';
+    display: inline-block;
+    color: #ff7300;
+    font-weight: 800;
+    margin-right: 6px;
+}
+
+.qa .a {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* 相关攻略 */
+.art {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 13px 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.art::after {
+    content: '›';
+    color: #bbb;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.art:active { background: #fafafa; }
+
+/* 更多品类 */
+.cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cat-chip {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ffd9b3;
+    color: #ff7300;
+    border-radius: 18px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.cat-chip:active { background: #fff5ec; }
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 26px 16px 10px;
+    font-size: 0.75rem;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+footer a { color: #ff7300; }
+
+@media (min-width: 640px) {
+    .hero { border-radius: 0 0 16px 16px; }
+}

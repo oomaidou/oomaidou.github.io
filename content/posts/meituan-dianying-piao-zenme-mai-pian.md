@@ -55,6 +55,8 @@ draft: false
 
 这个流程加起来不超过2分钟，差价有时候能到10-20元，尤其是大档期值得比一比。
 
+对比之外还有个更直接的入口：[特价电影票购票入口（全国通用，天天更新）](/coupons/dianying/)，页面价格已经是折后价，可以一起比。
+
 相关文章：
 
 [美团景点门票怎么买最便宜？148元门票神券怎么用](/posts/meituan-jingdian-menpiao-zenme-mai-pian/)
@@ -64,7 +66,7 @@ draft: false
 ---
 
 <div style="text-align:center; margin: 2rem 0;">
-  <a href="/coupons/" style="display:inline-block; padding:14px 36px; background:linear-gradient(135deg,#FF8C00,#FFA500); color:white; text-decoration:none; border-radius:10px; font-size:1.1rem; font-weight:bold; box-shadow:0 4px 15px rgba(255,140,0,0.35);">
+  <a href="/coupons/dianying/" style="display:inline-block; padding:14px 36px; background:linear-gradient(135deg,#FF8C00,#FFA500); color:white; text-decoration:none; border-radius:10px; font-size:1.1rem; font-weight:bold; box-shadow:0 4px 15px rgba(255,140,0,0.35);">
     🎬 点这里领电影票/生活优惠券 →
   </a>
 </div>

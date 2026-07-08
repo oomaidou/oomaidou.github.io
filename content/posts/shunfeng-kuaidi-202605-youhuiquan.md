@@ -322,6 +322,10 @@ draft: false
 </div>
 
 <div class="sf-footer-cta">
+  <a href="/coupons/kuaidi/">📦 寄快递优惠券入口（特价寄件5元起，每月更新）→</a>
+</div>
+
+<div class="sf-footer-cta">
   <a href="/coupons/">🧧 领取更多外卖 / 生活优惠券 →</a>
 </div>
 

@@ -52,6 +52,8 @@ draft: false
 
 两边都看一眼，选便宜的，不需要固执地只用一个。
 
+除了美团，还可以直接用这个入口：[麦当劳/肯德基/星巴克大牌点餐优惠入口](/coupons/dapai/)，不用开会员，套餐价已含优惠，两边比一下选便宜的。
+
 相关文章：
 
 [美团优惠券叠加使用教程](/posts/meituan-coupon-diejia-gonglue/)
@@ -61,8 +63,8 @@ draft: false
 ---
 
 <div style="text-align:center; margin: 2rem 0;">
-  <a href="/coupons/" style="display:inline-block; padding:14px 36px; background:linear-gradient(135deg,#FF8C00,#FFA500); color:white; text-decoration:none; border-radius:10px; font-size:1.1rem; font-weight:bold; box-shadow:0 4px 15px rgba(255,140,0,0.35);">
-    🧧 点这里领今日神券 →
+  <a href="/coupons/dapai/" style="display:inline-block; padding:14px 36px; background:linear-gradient(135deg,#FF8C00,#FFA500); color:white; text-decoration:none; border-radius:10px; font-size:1.1rem; font-weight:bold; box-shadow:0 4px 15px rgba(255,140,0,0.35);">
+    🍔 点这里领大牌点餐优惠 →
   </a>
 </div>
 

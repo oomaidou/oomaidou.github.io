@@ -1,6 +1,6 @@
 {
   "platform": "dache",
-  "platformName": "打车",
+  "platformName": "出行",
   "icon": "dache/didi.png",
   "sections": [
     {
@@ -9,29 +9,84 @@
         {
           "id": "didi-1",
           "title": "滴滴打车券",
-          "description": "出行大礼包,全员免费领",
+          "description": "出行大礼包最高100元，全员免费领",
           "type": "link",
           "action": "立即领取",
-          "url": "https://vv.didi.cn/305kJAl?source_id=OPEN_CPS_PLATFORM,224720269452&ref_from=dunion",
+          "url": "https://open.cdyunzhanxinxi.com/link/10007066a4f5b8fb00ae10002DXRBTlX",
           "icon": "dache/didi.png"
         },
         {
           "id": "huaxiaozhu-1",
           "title": "花小猪打车",
-          "description": "首单立减10元",
+          "description": "最高可领128元券包",
           "type": "link",
           "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/GIvGlQrV133gbeT8JXYvbSWHMmVkPw",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000416a4f5aabb44111000TmPFOaVX",
           "icon": "dache/huaxiaozhu.jpeg"
         },
         {
           "id": "t3-1",
           "title": "T3出行券",
-          "description": "超值券包天天领！",
+          "description": "168元优惠券组合包，每天可领",
           "type": "link",
           "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/1ZfmbPKbD70BsMpNMAeOuNx4R6xl6k",
+          "url": "https://open.cdyunzhanxinxi.com/link/10005406a4f60343aa241000RYJMMvss",
           "icon": "dache/t3.png"
+        },
+        {
+          "id": "tongcheng-dache-1",
+          "title": "同程打车/顺风车",
+          "description": "覆盖全国360+城市，出租车顺风车都有",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000806a4f60c381c991000CINPtLLY",
+          "icon": "dache/tongcheng.png"
+        }
+      ]
+    },
+    {
+      "title": "代驾",
+      "coupons": [
+        {
+          "id": "didi-daijia-1",
+          "title": "滴滴代驾券包",
+          "description": "无门槛立减20元+10元，每日可领一次",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10004626a4f5fa2174e21000FNKLtKzQ",
+          "icon": "dache/daijia.png"
+        }
+      ]
+    },
+    {
+      "title": "机票火车票",
+      "coupons": [
+        {
+          "id": "tongcheng-jipiao-1",
+          "title": "同程特价机票",
+          "description": "特价机票1折起，国内国际航线都有",
+          "type": "link",
+          "action": "立即订票",
+          "url": "https://open.cdyunzhanxinxi.com/link/10001196a4f616a8ca851000TYhwoNr5",
+          "icon": "dache/tongcheng.png"
+        },
+        {
+          "id": "xiecheng-1",
+          "title": "携程特价预订",
+          "description": "机票、酒店、门票特价入口",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10001276a4f61b33e8a31000IpgghFVN",
+          "icon": "dache/xiecheng.png"
+        },
+        {
+          "id": "meituan-16",
+          "title": "美团机票火车票红包",
+          "description": "机票新客：15元红包；火车票：5元红包！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/GNFE0G7z",
+          "icon": "meituan/chwl.png"
         }
       ]
     }

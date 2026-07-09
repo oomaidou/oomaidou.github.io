@@ -4,7 +4,7 @@
     { "id": "eleme", "name": "饿了么", "icon": "eleme/eleme.png" },
     { "id": "jingdong", "name": "京东", "icon": "jingdong/jd.png" },
     { "id": "dapai", "name": "大牌点餐", "icon": "dapai/food.png" },
-    { "id": "dache", "name": "打车", "icon": "dache/didi.png" },
+    { "id": "dache", "name": "出行", "icon": "dache/didi.png" },
     { "id": "kuaidi", "name": "寄快递", "icon": "kuaidi/kuaidi.png" },
     { "id": "dianying", "name": "电影票", "icon": "dianying/movie.png" },
     { "id": "shuang11", "name": "电商大促", "icon": "shuang11/jd.png" }

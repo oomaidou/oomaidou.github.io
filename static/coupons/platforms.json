@@ -1,7 +1,7 @@
 {
   "platforms": [
     { "id": "meituan", "name": "美团", "icon": "meituan/meituan.png" },
-    { "id": "eleme", "name": "饿了么", "icon": "eleme/eleme.png" },
+    { "id": "eleme", "name": "淘宝闪购", "icon": "eleme/shangou.png" },
     { "id": "jingdong", "name": "京东", "icon": "jingdong/jd.png" },
     { "id": "dapai", "name": "大牌点餐", "icon": "dapai/food.png" },
     { "id": "kafei", "name": "咖啡奶茶", "icon": "kafei/kafei.png" },

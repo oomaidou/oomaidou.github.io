@@ -267,7 +267,7 @@ footer {
 }
 
 .category-item {
-    width: 25%;
+    width: 20%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -301,12 +301,6 @@ footer {
     color: #333;
     margin-top: 6px;
     line-height: 1.1;
-}
-
-@media (min-width: 700px) {
-    .category-item {
-        width: 20%;
-    }
 }
 
 /* 标签页导航栏：文字横滑 */

@@ -7,12 +7,21 @@
       "title": "寄快递",
       "coupons": [
         {
+          "id": "bijia-1",
+          "title": "比价寄快递",
+          "description": "多家快递智能比价，件件有折扣",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10001426a5057fa2194a10001E8Z2R5a",
+          "icon": "kuaidi/kuaidi.png"
+        },
+        {
           "id": "kuaidi-1",
           "title": "特价寄快递",
           "description": "全国上门取件，低至5元下单",
           "type": "link",
           "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/xLi17qM0Idmwo7Z8hsADDpJwCba3Iy",
+          "url": "https://qf.jfshou.cn/unions//link/x1Li7qM0IdmWo7Z8hsADDpJwCba3Iy",
           "icon": "kuaidi/kuaidi.png"
         },
         {

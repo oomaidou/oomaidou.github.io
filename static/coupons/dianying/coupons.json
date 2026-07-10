@@ -4,15 +4,38 @@
   "icon": "dianying/movie.png",
   "sections": [
     {
-      "title": "电影票",
+      "title": "特价购票",
       "coupons": [
         {
-          "id": "movie-1",
-          "title": "电影票优惠",
-          "description": "看电影超省钱，全国通用",
+          "id": "dianying-1",
+          "title": "特价电影票",
+          "description": "8折起，每张便宜5-20元，全国1万+影院",
+          "type": "link",
+          "action": "立即购票",
+          "url": "https://open.cdyunzhanxinxi.com/link/10005876a505c121cc0410009YLsazQA",
+          "icon": "dianying/movie.png"
+        },
+        {
+          "id": "qianzhu-1",
+          "title": "千猪电影票",
+          "description": "折上折优惠，比美团、淘票票更实惠",
+          "type": "link",
+          "action": "立即购票",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000116a505ccbf30ce1000KCV249rU",
+          "icon": "dianying/movie.png"
+        }
+      ]
+    },
+    {
+      "title": "平台红包",
+      "coupons": [
+        {
+          "id": "taopiaopiao-1",
+          "title": "淘票票优惠券",
+          "description": "影迷专享60元电影礼包",
           "type": "link",
           "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/rkxPki6u3WbLVDTO4wPU3QgJNbhISd",
+          "url": "https://open.cdyunzhanxinxi.com/link/10004426a505d522cc671000tpi0Rynl",
           "icon": "dianying/movie.png"
         }
       ]

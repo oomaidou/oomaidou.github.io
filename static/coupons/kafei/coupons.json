@@ -1,0 +1,85 @@
+{
+  "platform": "kafei",
+  "platformName": "咖啡奶茶",
+  "icon": "kafei/kafei.png",
+  "sections": [
+    {
+      "title": "咖啡",
+      "coupons": [
+        {
+          "id": "ruixing-1",
+          "title": "瑞幸咖啡",
+          "description": "在线点餐，饮品特价优惠低至4.5折",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000766a506b993036d1000RSCQzoHp",
+          "icon": "kafei/ruixing.png"
+        },
+        {
+          "id": "kudi-1",
+          "title": "库迪咖啡",
+          "description": "在线点餐代购，全场饮品小吃5.8折起",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10004366a508d92e39fc1000DvPxHUsu",
+          "icon": "kafei/kudi.png"
+        },
+        {
+          "id": "xingbake-1",
+          "title": "星巴克",
+          "description": "在线点餐，饮品特价优惠低至5折",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000746a508dd9483bf1000jJLUa7cR",
+          "icon": "kafei/xingbake.png"
+        }
+      ]
+    },
+    {
+      "title": "奶茶茶饮",
+      "coupons": [
+        {
+          "id": "xicha-1",
+          "title": "喜茶",
+          "description": "在线点餐，饮品特价优惠低至9折",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000776a508e336581b1000zPaiysxU",
+          "icon": "kafei/xicha.png"
+        },
+        {
+          "id": "naixue-1",
+          "title": "奈雪的茶",
+          "description": "在线点餐，全场优惠8.8折起",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000456a508dfdbe0e11000EzXgEIvG",
+          "icon": "kafei/naixue.png"
+        },
+        {
+          "id": "meituan-7",
+          "title": "大牌饮品商品券",
+          "description": "4.9元喝奶茶，福利超多",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/2l5R4taz",
+          "icon": "meituan/meituan.png"
+        }
+      ]
+    },
+    {
+      "title": "更多品牌",
+      "coupons": [
+        {
+          "id": "juhe-1",
+          "title": "聚合点餐",
+          "description": "霸王茶姬、茉莉奶白、塔斯汀…一站领",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000786a506fed5f4ed1000CHdUr0Ao",
+          "icon": "kafei/kafei.png"
+        }
+      ]
+    }
+  ]
+}

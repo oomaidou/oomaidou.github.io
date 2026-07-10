@@ -1,0 +1,85 @@
+{
+  "platform": "jiudian",
+  "platformName": "酒店民宿",
+  "icon": "jiudian/jiudian.png",
+  "sections": [
+    {
+      "title": "订酒店领红包",
+      "coupons": [
+        {
+          "id": "tongcheng-jiudian-1",
+          "title": "同程酒店红包",
+          "description": "热门精选天天特惠，最高立减100元",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10007296a506a7c51f7e1002ZN11ZvaS",
+          "icon": "jiudian/tongcheng.png"
+        },
+        {
+          "id": "feizhu-hongbao-1",
+          "title": "飞猪酒店专享红包",
+          "description": "专属酒店权益，领267元券包",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10010066a5069c12d8191002JBHOzoxC",
+          "icon": "jiudian/feizhu.png"
+        },
+        {
+          "id": "meituan-jiudian-1",
+          "title": "美团酒店红包",
+          "description": "美团酒店/民宿优惠券一站领取",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10011586a5062b5d19e21002anOYlNLX",
+          "icon": "meituan/meituan.png"
+        }
+      ]
+    },
+    {
+      "title": "民宿",
+      "coupons": [
+        {
+          "id": "feizhu-minsu-1",
+          "title": "飞猪民宿",
+          "description": "底价抢先订，领券下单低至5折起",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10007046a506a445a77e1002d8tXsIyc",
+          "icon": "jiudian/feizhu.png"
+        },
+        {
+          "id": "tongcheng-minsu-1",
+          "title": "同程民宿",
+          "description": "特惠甩卖，3折起！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10008816a506b6d3f5bc1002JwSqmP32",
+          "icon": "jiudian/tongcheng.png"
+        }
+      ]
+    },
+    {
+      "title": "时令特惠",
+      "coupons": [
+        {
+          "id": "tongcheng-shuqi-1",
+          "title": "暑期超前订",
+          "description": "国际酒店暑期超前订，早订更划算",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10014726a506b53384851002aAkSA3D3",
+          "icon": "jiudian/tongcheng.png"
+        },
+        {
+          "id": "feizhu-zhengfu-1",
+          "title": "酒店政府消费券",
+          "description": "政府文旅补贴，单笔最高立减600元",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://open.cdyunzhanxinxi.com/link/10013416a506a044e7121002pyNUsBQp",
+          "icon": "jiudian/feizhu.png"
+        }
+      ]
+    }
+  ]
+}

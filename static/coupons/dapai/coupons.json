@@ -4,16 +4,48 @@
   "icon": "dapai/food.png",
   "sections": [
     {
-      "title": "大牌点餐",
+      "title": "一站式点餐",
       "coupons": [
         {
           "id": "food-1",
           "title": "大牌点餐优惠",
-          "description": "麦当劳、肯德基、星巴克...",
+          "description": "麦当劳、肯德基、星巴克…最低5折起",
           "type": "link",
           "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/vKxnHPsJIm5zhmgO3RIKQuReoivdYQ",
+          "url": "https://open.cdyunzhanxinxi.com/link/10005816a506fe02278b1000uWcmJ8Pj",
           "icon": "dapai/food.png"
+        }
+      ]
+    },
+    {
+      "title": "汉堡炸鸡",
+      "coupons": [
+        {
+          "id": "maidanglao-1",
+          "title": "麦当劳点餐",
+          "description": "在线点餐单单享特价，优惠点餐5折",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000736a506c0c241bf1000NA990cF6",
+          "icon": "dapai/maidanglao.png"
+        },
+        {
+          "id": "kendeji-1",
+          "title": "肯德基点餐",
+          "description": "在线点餐单单享特价，优惠点餐5折",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10000726a508e790472710003q0KQru3",
+          "icon": "dapai/kendeji.png"
+        },
+        {
+          "id": "dekeshi-1",
+          "title": "德克士点餐",
+          "description": "在线点餐8.8折",
+          "type": "link",
+          "action": "立即点餐",
+          "url": "https://open.cdyunzhanxinxi.com/link/10003406a508e9492b2c1000ORv8MGrZ",
+          "icon": "dapai/dekeshi.png"
         }
       ]
     }

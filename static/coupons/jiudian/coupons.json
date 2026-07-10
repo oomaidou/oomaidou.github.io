@@ -32,6 +32,15 @@
           "action": "立即领取",
           "url": "https://open.cdyunzhanxinxi.com/link/10011586a5062b5d19e21002anOYlNLX",
           "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-13",
+          "title": "华住酒店全国券",
+          "description": "每日最高可领650元券",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/tLccCoXz",
+          "icon": "meituan/mtminsu.png"
         }
       ]
     },
@@ -55,6 +64,16 @@
           "action": "立即领取",
           "url": "https://open.cdyunzhanxinxi.com/link/10008816a506b6d3f5bc1002JwSqmP32",
           "icon": "jiudian/tongcheng.png"
+        },
+        {
+          "id": "meituan-14",
+          "title": "民宿大促销",
+          "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/bk60Tyj8VAmex0d",
+          "dataType": "wxapp",
+          "icon": "meituan/mtminsu.png"
         }
       ]
     },
@@ -78,6 +97,15 @@
           "action": "立即领取",
           "url": "https://open.cdyunzhanxinxi.com/link/10013416a506a044e7121002pyNUsBQp",
           "icon": "jiudian/feizhu.png"
+        },
+        {
+          "id": "meituan-15",
+          "title": "酒店囤货节",
+          "description": "每日最高可领650元券",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/Hazeakqz",
+          "icon": "meituan/mtminsu.png"
         }
       ]
     }

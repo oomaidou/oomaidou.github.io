@@ -69,6 +69,14 @@
                 </div>
                 <span class="ticket-cta"><span class="btn">立即领取</span></span>
             </a>
+            <a class="ticket" href="http://dpurl.cn/tLccCoXz" target="_blank" rel="noopener">
+                <img class="ticket-icon" src="../meituan/mtminsu.png" alt="华住酒店全国券">
+                <div class="ticket-info">
+                    <div class="ticket-title">华住酒店全国券</div>
+                    <div class="ticket-desc">每日最高可领650元券</div>
+                </div>
+                <span class="ticket-cta"><span class="btn">立即领取</span></span>
+            </a>
         </section>
 
         <section>
@@ -89,6 +97,14 @@
                 </div>
                 <span class="ticket-cta"><span class="btn">立即领取</span></span>
             </a>
+            <a class="ticket" href="javascript:void(0)" onclick="copyMinsuCode(this)">
+                <img class="ticket-icon" src="../meituan/mtminsu.png" alt="美团民宿大促销">
+                <div class="ticket-info">
+                    <div class="ticket-title">民宿大促销</div>
+                    <div class="ticket-desc">200元无门槛券，复制后在微信中粘贴使用</div>
+                </div>
+                <span class="ticket-cta"><span class="btn">一键复制</span></span>
+            </a>
         </section>
 
         <section>
@@ -106,6 +122,14 @@
                 <div class="ticket-info">
                     <div class="ticket-title">酒店政府消费券</div>
                     <div class="ticket-desc">政府文旅补贴，单笔最高立减600元</div>
+                </div>
+                <span class="ticket-cta"><span class="btn">立即领取</span></span>
+            </a>
+            <a class="ticket" href="http://dpurl.cn/Hazeakqz" target="_blank" rel="noopener">
+                <img class="ticket-icon" src="../meituan/mtminsu.png" alt="美团酒店囤货节">
+                <div class="ticket-info">
+                    <div class="ticket-title">酒店囤货节</div>
+                    <div class="ticket-desc">每日最高可领650元券</div>
                 </div>
                 <span class="ticket-cta"><span class="btn">立即领取</span></span>
             </a>
@@ -168,5 +192,33 @@
     </footer>
 
 </div>
+
+<script>
+function copyMinsuCode(el) {
+    var text = '#小程序://美团丨外卖团购特价美食酒店电影/民宿特惠7折起/bk60Tyj8VAmex0d';
+    function done() {
+        var btn = el.querySelector('.btn');
+        if (btn) {
+            btn.textContent = '已复制，去微信粘贴';
+            setTimeout(function() { btn.textContent = '一键复制'; }, 2500);
+        }
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function() { fallback(); });
+    } else {
+        fallback();
+    }
+    function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) {}
+        document.body.removeChild(ta);
+    }
+}
+</script>
 </body>
 </html>

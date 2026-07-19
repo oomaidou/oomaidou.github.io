@@ -288,6 +288,10 @@ draft: false
 - [瑞幸、库迪、星巴克优惠券哪里领？在线点餐低至4.5折](/posts/ruixing-kudi-xingbake-youhuiquan-nali-ling/)
 - [滴滴代驾优惠券每天都能领？无门槛立减20元的入口和用法](/posts/didi-daijia-youhuiquan-meitian-ling/)
 - [特价电影票为什么比猫眼、淘票票便宜？代下单模式说清楚](/posts/tejia-dianyingpiao-weishenme-pianyi/)
+- [特价机票1折起是真的吗？入口和选票技巧](/posts/tejia-jipiao-yizhe-shi-zhen-de-ma/)
+- [寄快递怎么最便宜？上门取件5元起，多家快递一键比价](/posts/ji-kuaidi-zenme-zui-pianyi/)
+- [麦当劳、肯德基优惠点餐入口：在线点餐5折](/posts/maidanglao-kendeji-5zhe-diancan-rukou/)
+- [订民宿怎么省钱？3折特惠、200元无门槛券](/posts/ding-minsu-zenme-shengqian/)
 
 每写一篇新文章后，在这里追加一条。
 

@@ -292,6 +292,10 @@ draft: false
 - [寄快递怎么最便宜？上门取件5元起，多家快递一键比价](/posts/ji-kuaidi-zenme-zui-pianyi/)
 - [麦当劳、肯德基优惠点餐入口：在线点餐5折](/posts/maidanglao-kendeji-5zhe-diancan-rukou/)
 - [订民宿怎么省钱？3折特惠、200元无门槛券](/posts/ding-minsu-zenme-shengqian/)
+- [同程、飞猪、华住、美团，订酒店该选哪个平台的券？](/posts/tongcheng-feizhu-huazhu-meituan-jiudian-zenme-xuan/)
+- [T3出行优惠券怎么样？和滴滴、花小猪比该选谁](/posts/t3-chuxing-youhuiquan-zenmeyang/)
+- [瑞幸4.5折和库迪5.8折，哪个更划算？](/posts/ruixing-vs-kudi-nage-genghuasuan/)
+- [暑期出行怎么省？机票、酒店、打车三个优惠叠着用](/posts/shuqi-chuxing-zenme-sheng-jipiao-jiudian-dache/)
 
 每写一篇新文章后，在这里追加一条。
 

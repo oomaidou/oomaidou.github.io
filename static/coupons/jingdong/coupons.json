@@ -12,7 +12,7 @@
           "description": "大额半价叠加券，不限量",
           "type": "link",
           "action": "立即领取",
-          "url": "https://kzurl09.cn/t0GILY",
+          "url": "https://open.cdyunzhanxinxi.com/link/10011396a685b1d29b571002JHt3SSmu",
           "icon": "jingdong/jd.png"
         },
         {
@@ -21,7 +21,7 @@
           "description": "12元红包！每天可领！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/XGcJMBs",
+          "url": "https://u.jd.com/9DhHtHm",
           "icon": "jingdong/jd.png"
         },
         {
@@ -30,7 +30,7 @@
           "description": "20元京东外卖百亿补贴券",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/XacE4uY",
+          "url": "https://u.jd.com/9OhtgZD",
           "icon": "jingdong/jd.png"
         },
         {
@@ -39,16 +39,16 @@
           "description": "麦当劳最高满50-30！免运费！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/XgcJMXj",
+          "url": "https://open.cdyunzhanxinxi.com/link/10009806a6869ae295091002YNiOjCc7",
           "icon": "jingdong/jd.png"
         },
         {
           "id": "jd-3",
-          "title": "京东618红包",
-          "description": "无门槛红包最高26999",
+          "title": "京东外卖-领券中心",
+          "description": "满6减5可叠加券",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/X1cJtjs",
+          "url": "https://3.cn/2X9-JZ7m",
           "icon": "jingdong/jdbt.png"
         },
         {
@@ -57,7 +57,7 @@
           "description": "京东超市专属隐藏优惠券",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/XGcEeN1",
+          "url": "https://u.jd.com/9ghNkLE",
           "icon": "jingdong/jdbt.png"
         },
          {
@@ -66,7 +66,7 @@
           "description": "京东国补，速来领取！",
           "type": "link",
           "action": "立即领取",
-          "url": "https://u.jd.com/XGcEFjh",
+          "url": "https://u.jd.com/9rh7vTI",
           "icon": "jingdong/jdgb.png"
         }        
       ]

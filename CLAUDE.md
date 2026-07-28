@@ -220,7 +220,7 @@ draft: false
 - [京东外卖补贴变少了还值得点吗？现在怎么用最划算](/posts/jd-waimai-butie-jianshao-haizhi-dian/)
 - [美团外卖会被淘宝闪购打败吗？这场仗没那么简单](/posts/meituan-vs-taobao-flash-shei-ying/)
 - [外卖大战特价商品为什么都是奶茶？平台和品牌各有打算](/posts/waimai-dazhan-nacha-weihe-teshu/)
-- [顺丰快递2026年7月优惠券集合：3元无门槛+8折寄件券免费领](/posts/shunfeng-kuaidi-202605-youhuiquan/)
+- [顺丰快递2026年8月优惠券集合：3元无门槛+8折寄件券免费领](/posts/shunfeng-kuaidi-202605-youhuiquan/)
 - [美团会员怎么开最便宜？3元、4.9元、15元三种方式对比](/posts/meituan-huiyuan-zenme-pian-yi-kai/)
 - [美团外卖返利红包从哪里获取？2026年4个真实入口](/posts/meituan-fanlihongbao-zai-nar-ling/)
 - [淘宝上卖的美团外卖无门槛优惠券是真的吗？](/posts/taobao-shang-meituan-youhuiquan-shi-zhen-de-ma/)

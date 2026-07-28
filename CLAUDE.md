@@ -296,6 +296,10 @@ draft: false
 - [T3出行优惠券怎么样？和滴滴、花小猪比该选谁](/posts/t3-chuxing-youhuiquan-zenmeyang/)
 - [瑞幸4.5折和库迪5.8折，哪个更划算？](/posts/ruixing-vs-kudi-nage-genghuasuan/)
 - [暑期出行怎么省？机票、酒店、打车三个优惠叠着用](/posts/shuqi-chuxing-zenme-sheng-jipiao-jiudian-dache/)
+- [美团18日神券节是什么？每月18号怎么领18元红包](/posts/meituan-18ri-shenquanjie-zenme-ling/)
+- [美团4.9元抢60元神券包值不值？12张5元无门槛券怎么用](/posts/meituan-4.9yuan-qiang-60yuan-shenquanbao/)
+- [淘宝闪购夜宵红包怎么领？每晚8点整点抢](/posts/taobao-flash-yexiao-hongbao-mei-wan-8dian/)
+- [淘宝闪购咖啡、汉堡、披萨专场怎么用？大牌不止2折](/posts/taobao-flash-kafei-hanbao-pisa-zhuanchang/)
 
 每写一篇新文章后，在这里追加一条。
 

@@ -1,0 +1,63 @@
+{
+  "platform": "shuang11",
+  "platformName": "618活动",
+  "icon": "shuang11/taobao.png",
+  "sections": [
+    {
+      "title": "京东618专区",
+      "coupons": [
+        {
+          "id": "s11-jd-1",
+          "title": "京东618红包",
+          "description": "无门槛红包，最高26618等你来抢！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/HGsADoV",
+          "icon": "shuang11/jd.png"
+        },
+        {
+          "id": "s11-jd-2",
+          "title": "京东618百亿补贴",
+          "description": "618红包+百亿补贴，补上加补！",
+          "type": "link",
+          "action": "立即查看",
+          "url": "https://u.jd.com/HGs0Zyx",
+          "icon": "shuang11/jd.png"
+        }
+      ]
+    },
+    {
+      "title": "淘宝618专区",
+      "coupons": [
+        {
+          "id": "s11-tb-1",
+          "title": "淘宝618红包",
+          "description": "天天可领，最高26888元！",
+          "type": "copy",
+          "action": "复制淘口令",
+          "content": "28￥ CA381 cMYr5KEm3Dx￥ https://m.tb.cn/h.RZd2wz2  618超级红包会场",
+          "icon": "shuang11/taobao.png"
+        },
+        {
+          "id": "s11-tb-2",
+          "title": "淘宝618购物车优惠",
+          "description": "购物车商品优惠补贴！",
+          "type": "copy",
+          "action": "复制淘口令",
+          "content": "67￥ MF168 lYj35KEwRcz￥ https://m.tb.cn/h.iAK84mH  618购物车优惠发现",
+          "icon": "shuang11/taobao.png"
+        },
+        {
+          "id": "s11-tb-3",
+          "title": "淘宝618百亿补贴",
+          "description": "天天可领，618百亿补贴红包",
+          "type": "copy",
+          "action": "复制淘口令",
+          "content": "4$Y4h65KECG45$:// MF3084",
+          "icon": "shuang11/taobao.png"
+        }
+      ]
+    }
+  ],
+  "_说明": "618大促券归档（2026-08-02 停用）。双11或明年618启用时：把本文件内容合并回 coupons.json，或整体替换。启用前需确认口令和链接是否仍有效。"
+}

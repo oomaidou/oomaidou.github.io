@@ -1,60 +1,111 @@
 {
   "platform": "shuang11",
-  "platformName": "618活动",
+  "platformName": "网购省钱",
   "icon": "shuang11/taobao.png",
+  "_说明": "618/双11 大促券已归档在 coupons.618.json。大促期间可把归档内容合并回来，或整体替换本文件。",
   "sections": [
     {
-      "title": "京东618专区",
+      "title": "淘宝天猫",
       "coupons": [
         {
-          "id": "s11-jd-1",
-          "title": "京东618红包",
-          "description": "无门槛红包，最高26618等你来抢！",
+          "id": "tb-baiyi-1",
+          "title": "聚划算百亿补贴",
+          "description": "品牌正品，官方补贴，买贵必赔！复制后打开淘宝APP",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "4$gpjugxdEIKb$:// CA1831",
+          "icon": "shuang11/taobao.png"
+        },
+        {
+          "id": "tb-miaosha-1",
+          "title": "淘宝秒杀",
+          "description": "秒杀省钱周，全场立减10%。复制后打开淘宝APP",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "5$BfhJgxdDOV0$:// CA1831",
+          "icon": "shuang11/taobao.png"
+        },
+        {
+          "id": "tmall-chaoshi-1",
+          "title": "天猫超市优惠礼金",
+          "description": "爆款好价，每天10点限时抢礼金。复制后打开淘宝APP",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "7$fMP8gxWZXWB$:// MF3135",
+          "icon": "shuang11/taobao.png"
+        }
+      ]
+    },
+    {
+      "title": "京东",
+      "coupons": [
+        {
+          "id": "jd-chaoshi-xinren-1",
+          "title": "京东超市新人一分购",
+          "description": "新用户专享，超级补贴",
           "type": "link",
           "action": "立即领取",
-          "url": "hhttps://u.jd.com/HGsADoV",
+          "url": "https://u.jd.com/UaGVOez",
           "icon": "shuang11/jd.png"
         },
         {
-          "id": "s11-jd-2",
-          "title": "京东618百亿补贴",
-          "description": "618红包+百亿补贴，补上加补！",
+          "id": "jd-baokuan-1",
+          "title": "京东爆款限时直降",
+          "description": "今日爆品限时直降，捡漏别错过",
           "type": "link",
           "action": "立即查看",
-          "url": "https://u.jd.com/HGs0Zyx",
+          "url": "https://u.jd.com/U1GFKNW",
+          "icon": "shuang11/jd.png"
+        },
+        {
+          "id": "jd-zhifu-1fen-1",
+          "title": "京东支付1分购",
+          "description": "使用京东支付，老用户也能一分购",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/U1G7KT9",
+          "icon": "shuang11/jd.png"
+        },
+        {
+          "id": "jd-yincang-quan-1",
+          "title": "京东隐藏优惠券",
+          "description": "优惠雷达帮你发现隐藏好价",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/U16IVKZ",
           "icon": "shuang11/jd.png"
         }
       ]
     },
     {
-      "title": "淘宝618专区",
+      "title": "拼多多",
       "coupons": [
         {
-          "id": "s11-tb-1",
-          "title": "淘宝618红包",
-          "description": "天天可领，最高26888元！",
-          "type": "copy",
-          "action": "复制淘口令",
-          "content": "28￥ CA381 cMYr5KEm3Dx￥ https://m.tb.cn/h.RZd2wz2  618超级红包会场",
-          "icon": "shuang11/taobao.png"
+          "id": "pdd-baokuan-1",
+          "title": "今日爆款",
+          "description": "数量有限，更有大额优惠券发放中",
+          "type": "link",
+          "action": "立即查看",
+          "url": "https://mobile.yangkeduo.com/duo_today_burst.html?pid=1978589_257020401&cpsSign=CM_260802_1978589_257020401_860e5d090995aaa7577b12a82d9aeb0a&_x_ddjb_act=%7B%22st%22%3A%223%22%7D&duoduo_type=2",
+          "icon": "shuang11/pdd.png"
         },
         {
-          "id": "s11-tb-2",
-          "title": "淘宝618购物车优惠",
-          "description": "购物车商品优惠补贴！",
-          "type": "copy",
-          "action": "复制淘口令",
-          "content": "67￥ MF168 lYj35KEwRcz￥ https://m.tb.cn/h.iAK84mH  618购物车优惠发现",
-          "icon": "shuang11/taobao.png"
+          "id": "pdd-qingcang-1",
+          "title": "品牌清仓",
+          "description": "品牌清仓价，更有大额优惠券",
+          "type": "link",
+          "action": "立即查看",
+          "url": "https://mobile.yangkeduo.com/duo_brand_sales.html?pid=1978589_257020401&cpsSign=CM_260802_1978589_257020401_185e1d6aed2b68c2a3c5bc09c1b43acd&_x_ddjb_act=%7B%22st%22%3A%223%22%7D&duoduo_type=2",
+          "icon": "shuang11/pdd.png"
         },
         {
-          "id": "s11-tb-3",
-          "title": "淘宝618百亿补贴",
-          "description": "天天可领，618百亿补贴红包",
-          "type": "copy",
-          "action": "复制淘口令",
-          "content": "4$Y4h65KECG45$:// MF3084",
-          "icon": "shuang11/taobao.png"
+          "id": "pdd-guobu-1",
+          "title": "国补专区",
+          "description": "官方补贴无套路，名额有限先到先得",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://mobile.yangkeduo.com/muti_coupon_rec.html?__page=duo_tencent_subsidy&pid=1978589_257020401&cpsSign=CSC_260802_1978589_257020401_e7a6bcdd9d651624608ed9adba829eab&_x_ddjb_act=%7B%22st%22%3A%2215%22%7D&duoduo_type=2",
+          "icon": "shuang11/pdd.png"
         }
       ]
     }

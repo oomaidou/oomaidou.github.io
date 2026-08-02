@@ -47,6 +47,13 @@ jobs:
             --minify \
             --baseURL "https://www.shenquanquan.com/"
 
+      - name: Refresh coupons sitemap lastmod
+        run: |
+          # static/coupons/sitemap.xml 是手写的，lastmod 长期不更新，
+          # 导致这些页面永远进不了「近 2 天更新」的推送队列。
+          # 这里按各类目目录的 git 提交时间重算，只改 public/ 里待部署的那份。
+          python3 .github/scripts/refresh_coupons_sitemap.py public/coupons/sitemap.xml
+
       - name: Deploy to server
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
@@ -92,7 +99,11 @@ jobs:
           # 等待 GitHub Pages CDN 更新
           sleep 30
 
-          curl -sS --retry 3 -o sitemap.xml "https://www.shenquanquan.com/sitemap.xml"
+          # 两份 sitemap 都要读：根 sitemap 是 Hugo 生成的文章页，
+          # /coupons/sitemap.xml 是手写的优惠券类目页，不在根 sitemap 里。
+          curl -sS --retry 3 -o sitemap-root.xml "https://www.shenquanquan.com/sitemap.xml"
+          curl -sS --retry 3 -o sitemap-coupons.xml "https://www.shenquanquan.com/coupons/sitemap.xml"
+          cat sitemap-root.xml sitemap-coupons.xml > sitemap.xml
 
           # 从 sitemap 提取近 2 天新增/更新的 URL
           # urls-baidu.txt：最多 10 条 —— 百度配额就是 10 条/天，且
@@ -115,13 +126,16 @@ jobs:
               if lastmod and datetime.fromisoformat(lastmod[:10]).date() >= cutoff:
                   urls.append(loc)
 
-          # 百度推送配额有限，优先文章页，其次首页，最后标签/分类等聚合页
+          # 百度推送配额有限（10 条/天），按价值排序：
+          # 文章页 > 首页 > 优惠券类目落地页 > 标签/分类等聚合页
           def priority(u):
               if "/posts/" in u and not u.rstrip("/").endswith("posts"):
                   return 0
               if u.rstrip("/") == "https://www.shenquanquan.com":
                   return 1
-              return 2
+              if "/coupons/" in u:
+                  return 2
+              return 3
 
           urls.sort(key=priority)
 

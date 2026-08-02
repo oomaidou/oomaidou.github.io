@@ -304,6 +304,10 @@ draft: false
 - [七夕约会怎么省？电影票、吃饭、鲜花的省钱组合](/posts/qixi-yuehui-zenme-sheng-dianying-chifan-xianhua/)
 - [寄快递怎么选快递公司？顺丰、京东、三通一达对比](/posts/ji-kuaidi-zenme-xuan-kuaidi-gongsi/)
 - [什么时候看电影最便宜？周二半价日和几个省钱时机](/posts/shenme-shihou-kan-dianying-zui-pianyi/)
+- [火车票怎么买便宜？候补、加速包和抢票软件的真相](/posts/huochepiao-zenme-mai-pianyi-houbu-jiasubao/)
+- [酒店订了能退吗？退改规则和到店没房怎么办](/posts/jiudian-ding-le-neng-tui-ma-daodian-meifang/)
+- [接送机怎么最省？打车、专车、机场大巴对比](/posts/jiesongji-zenme-zui-sheng-dache-zhuanche-dabus/)
+- [酒店什么时候订最便宜？动态定价的规律](/posts/jiudian-shenme-shihou-ding-zui-pianyi/)
 
 每写一篇新文章后，在这里追加一条。
 

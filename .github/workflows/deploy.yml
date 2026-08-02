@@ -95,7 +95,10 @@ jobs:
           curl -sS --retry 3 -o sitemap.xml "https://www.shenquanquan.com/sitemap.xml"
 
           # 从 sitemap 提取近 2 天新增/更新的 URL
-          # urls-baidu.txt：最多 20 条（百度配额小）；urls-all.txt：全量（IndexNow 无限制）
+          # urls-baidu.txt：最多 10 条 —— 百度配额就是 10 条/天，且
+          #   提交条数超过当日剩余配额时是「整批拒绝」（error 400 over quota），
+          #   不是收下能收的部分，所以宁可少提交也不能超（2026-08-02 实测确认）
+          # urls-all.txt：全量（IndexNow 无限制）
           python3 <<'EOF'
           import re
           from datetime import datetime, timedelta, timezone
@@ -123,7 +126,7 @@ jobs:
           urls.sort(key=priority)
 
           with open("urls-baidu.txt", "w") as f:
-              f.write("\n".join(urls[:20]))
+              f.write("\n".join(urls[:10]))
           with open("urls-all.txt", "w") as f:
               f.write("\n".join(urls))
           print(f"sitemap 共 {len(entries)} 个页面，近 2 天更新 {len(urls)} 个")
@@ -143,22 +146,51 @@ jobs:
             exit 0
           fi
 
-          echo "推送以下 URL 到百度："
+          echo "待推送 URL："
           cat urls-baidu.txt
           echo ""
 
-          curl -sS -H 'Content-Type:text/plain' --data-binary @urls-baidu.txt \
-            "http://data.zz.baidu.com/urls?site=https://www.shenquanquan.com&token=${BAIDU_PUSH_TOKEN}" \
-            | tee baidu-response.json
-          echo ""
+          API="http://data.zz.baidu.com/urls?site=https://www.shenquanquan.com&token=${BAIDU_PUSH_TOKEN}"
+          TOTAL=$(grep -c . urls-baidu.txt)
 
-          # success = 推送成功；over quota = 当日配额用完（警告但不失败）；其他错误（如 token 无效）任务失败以便察觉
-          if grep -q '"success"' baidu-response.json; then
-            echo "推送成功"
-          elif grep -q 'over quota' baidu-response.json; then
-            echo "::warning::百度当日推送配额已用完，本次未推送"
+          # 超配额是整批拒绝，所以逐级减少条数重试，尽量把剩余配额用上。
+          # 例：剩余 3 条时，提交 10 条整批被拒 → 退到 5 条仍被拒 → 退到 2 条成功。
+          # 从实际待推条数起步，被拒就减半。固定阶梯（10/5/2/1）会漏推：
+          # 待推 3 条时会跳过 10 和 5 直接试 2 条，剩下 1 条永远推不出去。
+          PUSHED=0
+          N=$TOTAL
+          [ "$N" -gt 10 ] && N=10
+          while [ "$N" -ge 1 ]; do
+            head -n "$N" urls-baidu.txt > batch.txt
+
+            # 505 是百度侧临时抖动，重试一次
+            for ATTEMPT in 1 2; do
+              curl -sS --max-time 30 -H 'Content-Type:text/plain' --data-binary @batch.txt \
+                "$API" > baidu-response.json || echo '{"error":-1,"message":"curl failed"}' > baidu-response.json
+              grep -q '"error":505' baidu-response.json || break
+              echo "百度返回 505，5 秒后重试"; sleep 5
+            done
+
+            echo "提交 $N 条 → $(cat baidu-response.json)"
+
+            if grep -q '"success"' baidu-response.json; then
+              PUSHED=$(python3 -c "import json;print(json.load(open('baidu-response.json'))['success'])")
+              break
+            elif grep -q 'over quota' baidu-response.json; then
+              N=$((N / 2))      # 配额不够，减半再试
+              continue
+            else
+              # token 失效、站点不匹配等真实错误，直接失败以便察觉
+              echo "::error::百度推送返回未知错误"
+              exit 1
+            fi
+          done
+
+          if [ "$PUSHED" -eq 0 ]; then
+            # 明确区分「配额耗尽」和「推成功了」，不让 0 条推送以绿灯蒙混过去
+            echo "::warning::百度当日配额已用完，本次 0 条推送成功（共 $TOTAL 条待推，明日 Action 会重试）"
           else
-            exit 1
+            echo "推送成功 $PUSHED 条（共 $TOTAL 条待推）"
           fi
 
       - name: Push to IndexNow (Bing)

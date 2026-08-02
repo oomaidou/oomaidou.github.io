@@ -474,7 +474,11 @@ footer {
         font-size: 0.85rem;
     }
     .site-intro-item p {
-        display: none;
+        /* 原为 display:none。这段是给用户看的类目说明，
+           手机端藏起来既浪费信息又踩隐藏文字的线，改成缩小显示。 */
+        font-size: 0.7rem;
+        line-height: 1.35;
+        margin: 0 0 3px;
     }
     .site-intro-item a {
         font-size: 0.72rem;

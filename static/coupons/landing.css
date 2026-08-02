@@ -144,6 +144,27 @@ section > h2 {
     box-shadow: 0 3px 8px rgba(255,36,66,0.25);
 }
 
+/* 复制型票券（淘口令等） */
+.ticket-copy { cursor: pointer; }
+
+.btn-copy {
+    background: linear-gradient(135deg, #ff9500, #ff7300);
+    box-shadow: 0 3px 8px rgba(255,115,0,0.25);
+}
+
+.ticket-copy.copied .btn { background: #4caf50; box-shadow: none; }
+
+.tip {
+    background: #fff8ee;
+    border: 1px solid #ffe3c2;
+    border-radius: 10px;
+    padding: 11px 13px;
+    font-size: 0.83rem;
+    line-height: 1.6;
+    color: #8a6220;
+    margin-bottom: 12px;
+}
+
 /* 领取步骤 */
 .steps {
     background: #fff;

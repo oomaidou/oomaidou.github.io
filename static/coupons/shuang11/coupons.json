@@ -34,7 +34,9 @@
           "content": "7$fMP8gxWZXWB$:// MF3135",
           "icon": "shuang11/taobao.png"
         }
-      ]
+      ],
+      "_有效期": "淘口令有效期30天，2026-09-01 前后失效，需重新生成",
+      "_失效日": "2026-09-01"
     },
     {
       "title": "京东",
@@ -75,7 +77,9 @@
           "url": "https://u.jd.com/U16IVKZ",
           "icon": "shuang11/jd.png"
         }
-      ]
+      ],
+      "_有效期": "京东短链有效期60天，2026-10-01 前后失效，需重新生成",
+      "_失效日": "2026-10-01"
     },
     {
       "title": "拼多多",
@@ -107,7 +111,9 @@
           "url": "https://mobile.yangkeduo.com/muti_coupon_rec.html?__page=duo_tencent_subsidy&pid=1978589_257020401&cpsSign=CSC_260802_1978589_257020401_e7a6bcdd9d651624608ed9adba829eab&_x_ddjb_act=%7B%22st%22%3A%2215%22%7D&duoduo_type=2",
           "icon": "shuang11/pdd.png"
         }
-      ]
+      ],
+      "_有效期": "拼多多长链长期有效，无需定期更换"
     }
-  ]
+  ],
+  "_链接有效期": "素材生成于 2026-08-02。淘宝口令30天 / 京东链接60天 / 拼多多长期有效。失效表现为点开报错或提示活动结束。"
 }

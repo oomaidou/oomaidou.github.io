@@ -14,6 +14,47 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+/* 品牌条：橙色 banner 上方的一条窄导航，露出站点名并给出文章区入口 */
+.brand-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 16px;
+    background: #fff;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.brand-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ff7300;
+    letter-spacing: 1px;
+}
+
+.brand-link {
+    font-size: 0.88rem;
+    color: #666;
+    text-decoration: none;
+    padding: 4px 12px;
+    border: 1px solid #e2e2e2;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+}
+
+.brand-link:hover {
+    color: #ff7300;
+    border-color: #ffcc99;
+}
+
 header {
     background: #ff7300; /* 降级方案 */
     background: -webkit-linear-gradient(left, #ff7300 0%, #ffb347 100%);
@@ -21,9 +62,7 @@ header {
     background: linear-gradient(90deg, #ff7300 0%, #ffb347 100%);
     padding: 8px 0 18px 0;
     text-align: center;
-    -webkit-border-radius: 10px 10px 0 0;
-    -moz-border-radius: 10px 10px 0 0;
-    border-radius: 10px 10px 0 0;
+    /* 圆角顶部已移交给上方的 .brand-bar，这里保持直角，否则会露出台阶 */
     position: relative;
 }
 

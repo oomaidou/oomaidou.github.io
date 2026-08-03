@@ -1,5 +1,10 @@
 {{- /* 扩展PaperMod主题head部分的正确方式 */ -}}
 
+{{- /* 百度对 PC / 移动端分开建索引。本站是响应式，
+       用 applicable-device 显式告诉百度同一个 URL 两端通用，
+       不声明也能识别，但这是明确信号。 */ -}}
+<meta name="applicable-device" content="pc,mobile">
+
 {{- /* 360站长平台站点验证 */ -}}
 <meta name="360-site-verification" content="dd7ba55521439b8b1afe31a93eab1977" />
 

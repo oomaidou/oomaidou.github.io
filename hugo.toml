@@ -71,7 +71,7 @@ buildExpired = false
 
 [[menu.main]]
   identifier = "coupons"
-  name = "优惠券大全"
+  name = "去领优惠券"
   url = "/coupons/"
   weight = 20
 

@@ -1,9 +1,9 @@
 {{- define "main" }}
 
-<meta http-equiv="refresh" content="0; url=/coupons/">
-<script>window.location.replace("/coupons/");</script>
-
-{{- /* 以下内容在重定向生效前短暂显示，也供搜索引擎抓取 */ -}}
+{{- /* 首页跳转已改为 Nginx 的 301（location = / → /coupons/）。
+       原先这里用 meta refresh + location.replace，爬虫看到的是下面这篇文章、
+       真人却被立刻踢走，两者不一致属于 sneaky redirect，2026-08-03 移除。
+       正常情况下本模板不会再被访问到，保留内容作为 301 失效时的兜底。 */ -}}
 {{- /* 获取最新的一篇文章 */ -}}
 {{- $posts := where .Site.RegularPages "Section" "posts" -}}
 {{- $posts = where $posts ".Draft" false -}}

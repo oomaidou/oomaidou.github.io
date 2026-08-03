@@ -61,10 +61,12 @@ buildExpired = false
     url = "https://github.com/oomaidou"
 
 # 主导航菜单配置
+# 原为「优惠头条」指向 /，但 / 已 301 到 /coupons/，
+# 会和下面的「优惠券大全」跳到同一个地方，所以改指文章列表。
 [[menu.main]]
-  identifier = "home"
-  name = "优惠头条"
-  url = "/"
+  identifier = "posts"
+  name = "省钱攻略"
+  url = "/posts/"
   weight = 10
 
 [[menu.main]]

@@ -10,7 +10,9 @@
     border-radius: 15px 15px 15px 15px !important;
     box-shadow: 0 4px 20px rgba(255, 140, 0, 0.25);
     border: none !important;
-    padding: 15px 0 20px 0 !important;
+    /* 原为 15px 0 20px 0，配合纵向堆叠的布局，banner 被撑到近 200px 高。
+       改为横向单行后由 nav 自己控制内边距。 */
+    padding: 0 !important;
     position: relative;
     overflow: hidden;
     margin: 10px;
@@ -25,14 +27,17 @@ body .header {
 }
 
 /* ===== 头部容器布局 ===== */
+/* 横向单行：左侧品牌，右侧菜单。
+   原为 flex-direction: column，品牌、副标题、菜单三样纵向堆叠，
+   banner 因此很厚。副标题已移除，这里同步改成一行。 */
 .header nav {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: row !important;
     align-items: center !important;
-    justify-content: center !important;
+    justify-content: space-between !important;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 12px 20px !important;
 }
 
 /* ===== 主标题样式（模仿"每日优惠精选"） ===== */
@@ -72,12 +77,13 @@ body .header {
 }
 
 /* ===== 导航菜单居中布局 ===== */
+/* 横排后菜单靠右，且不再需要为纵向堆叠留的上边距 */
 .header #menu {
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-end !important;
     align-items: center !important;
-    gap: 35px;
-    margin: 15px 0 0 0 !important;
+    gap: 12px;
+    margin: 0 !important;
     padding: 0 !important;
     list-style: none !important;
 }

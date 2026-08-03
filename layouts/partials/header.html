@@ -48,9 +48,8 @@
             </a>
         </div>
 
-        <!-- 中间：优惠信息头条 + 导航菜单 -->
+        <!-- 右侧：导航菜单 -->
         <div class="center-content">
-            <div class="site-title">优惠信息头条</div>
             {{- $currentPage := . }}
             <ul id="menu" class="center-menu">
                 {{- range site.Menus.main }}
@@ -84,26 +83,16 @@
             </ul>
         </div>
 
-        <!-- 右上角：空白（不显示任何内容） -->
-        <div class="logo-right">
-            <!-- 空白区域 -->
-        </div>
     </nav>
 </header>
 
 <style>
-.custom-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 24px;
-    background: var(--theme);
-    border-bottom: 1px solid var(--border);
-}
+/* 头部的布局（横排、内边距、橙色底）统一由 assets/css/extended/custom.css
+   的 `.header nav` 控制，那边带 !important，在这里再写一遍只会互相打架。
+   本文件只保留 logo 和菜单项自身的样式。 */
 
 .logo-left {
     flex: 0 0 auto;
-    min-width: 120px;
 }
 
 .logo-left a {
@@ -118,20 +107,10 @@
 }
 
 .center-content {
-    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.site-title {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: var(--primary);
-    margin-bottom: 8px;
-    text-align: center;
-}
 
 .center-menu {
     display: flex;
@@ -153,39 +132,18 @@
     color: var(--accent);
 }
 
-.logo-right {
-    flex: 0 0 auto;
-    min-width: 120px;
-    /* 右侧空白区域，不显示任何内容 */
-}
 
 /* 移动端适配 */
 @media (max-width: 768px) {
-    .custom-nav {
-        flex-direction: row;
-        padding: 12px 16px;
-        align-items: center;
-    }
 
-    .logo-left {
-        min-width: auto;
-        text-align: left;
-        flex: 0 0 auto;
-    }
+
 
     .logo-left a {
         font-size: 1.1em;
     }
 
-    .center-content {
-        flex: 1;
-        margin: 0 10px;
-    }
 
-    .site-title {
-        font-size: 1.1em;
-        margin-bottom: 4px;
-    }
+
 
     .center-menu {
         gap: 12px;
@@ -197,9 +155,6 @@
         font-size: 0.9em;
     }
 
-    .logo-right {
-        min-width: 60px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -211,8 +166,5 @@
         font-size: 0.9em;
     }
 
-    .site-title {
-        font-size: 1.1em;
-    }
 }
 </style>

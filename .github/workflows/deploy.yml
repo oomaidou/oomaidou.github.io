@@ -47,6 +47,13 @@ jobs:
             --minify \
             --baseURL "https://www.shenquanquan.com/"
 
+      - name: Add content hash to coupons assets
+        run: |
+          # Nginx 对 css/js 设了 expires 7d，而优惠券子站是裸引用 style.css，
+          # 改了样式老用户 7 天内还是拿旧文件（新 HTML + 旧 CSS）。
+          # 加内容 hash 查询串，内容一变 URL 就变，缓存自动失效。
+          python3 .github/scripts/add_asset_hash.py public/coupons
+
       - name: Refresh coupons sitemap lastmod
         run: |
           # static/coupons/sitemap.xml 是手写的，lastmod 长期不更新，

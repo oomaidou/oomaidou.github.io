@@ -1,5 +1,22 @@
 {{- /* 扩展PaperMod主题head部分的正确方式 */ -}}
 
+{{- /* 文章数少于 3 篇的标签/分类页加 noindex。
+       这类聚合页内容与文章高度重合，搜索引擎本来也不收（GSC 显示
+       177 个「已发现-尚未编入索引」，与标签页数量吻合），明确声明
+       可以省下爬取预算。用 follow 而不是 nofollow，让链接权重仍能流向文章。
+
+       注意这里会与主题 head.html 输出的 <meta name="robots" content="index, follow">
+       同时存在。搜索引擎对冲突的 robots 指令取最严格的那条，所以 noindex 生效。
+       之所以不改主题的那行：它的判断依据是 .Params.robotsNoIndex，而
+       taxonomy term 页无法单独设 param（除非给 133 个标签各建一个 _index.md），
+       而 fork 整个 157 行的 head.html 维护成本更高。
+
+       阈值与 layouts/sitemap.xml 里的 $minPages 保持一致，改动时两处一起改。 */ -}}
+{{- $minPages := 3 -}}
+{{- if and (eq .Kind "term") (lt (len .Pages) $minPages) }}
+<meta name="robots" content="noindex, follow">
+{{- end }}
+
 {{- /* 百度对 PC / 移动端分开建索引。本站是响应式，
        用 applicable-device 显式告诉百度同一个 URL 两端通用，
        不声明也能识别，但这是明确信号。 */ -}}

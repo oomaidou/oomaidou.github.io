@@ -376,7 +376,14 @@ draft: false
 3. 再读相关主题的 `insights/` 文件（获取深度角度和用户视角）
 4. `official.md` 的内容保证事实准确性，`insights/` 提供写作角度
 5. **查图片素材**：读 `.claude/image-assets.md`，找与文章主题相关的图片；有相关图就在正文对应位置插入 `![描述](/images/<平台>/<文件名>)`；没有合适图片时告知用户
-6. **文章草稿完成后，发布前必须用 `proofreading` skill 做一遍审校**，去除 AI 腔，确认数字准确，再交用户确认
+6. **文章草稿完成后，发布前必须过两层审校**，再交用户确认：
+   - **通用层 `human-writing`（活人感写作）**：材料够不够、中文文风、模型腔。
+     初稿完成后读 `references/revision.md`，并跑
+     `python3 .claude/skills/human-writing/scripts/check_prose.py <稿件路径>` 直到硬禁令清零
+   - **项目层 `proofreading`**：品牌口吻、活动数字对知识库、第三方推广口令、各平台导流红线
+
+   > 注意文体豁免：券速递、好价清单这类工具性文体**不适用** human-writing 的禁冒号规则，
+   > 详见 `proofreading/SKILL.md`「文体豁免」一节。
 
 ## 扩充知识库
 
@@ -408,7 +415,7 @@ python scripts/cli.py question-detail --question-id {问题ID}
 
 ## 微信公众号文章（mp.weixin.qq.com）
 
-**优先用 wechat-reader skill（已验证有效）：**
+**优先用 wechat-mp-collector skill 的功能1（原 wechat-reader 已并入，2026-08-05）：**
 ```bash
 wechat-article-to-markdown "https://mp.weixin.qq.com/s/..." --output /tmp/wechat_article/
 ```
